@@ -14,6 +14,7 @@ import { Button } from '@/components/starwind/button';
 import { CHECKOUT_LINK_REL } from '../../config/checkout';
 import { RadioGroup, RadioGroupItem } from '@/components/starwind/radio-group';
 import { ROUTES, getLocalizedPath } from '../../utils/path';
+import StatusUpdatedPill from '../StatusUpdatedPill.astro';
 
 interface Props {
   product: ProductPage;
@@ -29,11 +30,11 @@ const lifetimeSaveUsd =
   monthlyPlan && lifetimePlan ? monthlyPlan.priceUsd * 12 - lifetimePlan.priceUsd : 0;
 
 const isUgc = product.slug === 'ugc';
-const isRustCheat = product.slug === 'rust-cheat';
-const isFillCard = isUgc || isRustCheat;
+const isIsleCheat = product.slug === 'the-isle-cheat';
+const isFillCard = isUgc || isIsleCheat;
 const statusHref = getLocalizedPath(ROUTES.status, locale);
 const ugcModuleChips = ['Unban tool', 'Appeals & recovery', 'Windows 10/11'];
-const rustModuleChips = ['ESP', 'Aimbot', 'Weapon', 'Misc', 'Config', 'Windows 10/11'];
+const isleModuleChips = ['Visual ESP', 'Misc', 'Evrima', 'Windows 10/11'];
 
 function checkoutDisplayPriceNote(planId: string): string {
   return planId === 'lifetime' ? 'USD · Lifetime' : 'USD · 30 days';
@@ -88,10 +89,10 @@ const defaultPriceNote = checkoutDisplayPriceNote(defaultPlan.id);
         )
       }
       {
-        isRustCheat && (
+        isIsleCheat && (
           <div class="product-checkout__modules rounded-xl border border-border bg-background p-3">
             <ul class="product-checkout__module-chips m-0 flex list-none flex-wrap gap-1.5 p-0" aria-label="Modules included">
-              {rustModuleChips.map((chip) => (
+              {isleModuleChips.map((chip) => (
                 <li class="product-checkout__module-chip">{chip}</li>
               ))}
             </ul>
@@ -155,22 +156,25 @@ const defaultPriceNote = checkoutDisplayPriceNote(defaultPlan.id);
                 </span>
               </p>
             </div>
-            <Button
-              as="a"
-              href={checkoutUrlWithPlan(product.buyUrl, defaultPlan.id)}
-              variant="primary"
-              size="lg"
-              class="product-checkout__buy group/buy w-full rounded-xl"
-              data-checkout-buy
-              rel={CHECKOUT_LINK_REL}
-              data-astro-reload
-              data-astro-prefetch="false"
-            >
-              {t.pricing.buyNow}
-              <span class="product-checkout__buy-arrow inline-flex transition-transform duration-200 ease-out group-hover/buy:translate-x-1">
-                <Icon name="arrowRight" size={17} />
-              </span>
-            </Button>
+            <div class="product-checkout__buy-row flex flex-col gap-2">
+              {isIsleCheat && <StatusUpdatedPill />}
+              <Button
+                as="a"
+                href={checkoutUrlWithPlan(product.buyUrl, defaultPlan.id)}
+                variant="primary"
+                size="lg"
+                class="product-checkout__buy group/buy w-full rounded-xl"
+                data-checkout-buy
+                rel={CHECKOUT_LINK_REL}
+                data-astro-reload
+                data-astro-prefetch="false"
+              >
+                {t.pricing.buyNow}
+                <span class="product-checkout__buy-arrow inline-flex transition-transform duration-200 ease-out group-hover/buy:translate-x-1">
+                  <Icon name="arrowRight" size={17} />
+                </span>
+              </Button>
+            </div>
           </div>
         ) : (
           <>

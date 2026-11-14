@@ -22,7 +22,7 @@ function normalizeNavPath(pathname: string): string {
 
 const NAV_LOCALES = ['en'];
 
-/** `/product/rust-cheat` and locale variants — highlight the Products nav item. */
+/** `/product/the-isle-cheat` and locale variants — highlight the Products nav item. */
 function isProductDetailPath(path: string): boolean {
   const parts = path.split('/').filter(Boolean);
   const start = parts[0] && NAV_LOCALES.includes(parts[0]) ? 1 : 0;

@@ -8,7 +8,7 @@ import { SITE_URL } from './site';
 const blogPosts = getBlogPostsForLocale(defaultLocale);
 
 const blogLastmod = new Map(
-  blogPosts.map((post) => [`/blog/${post.slug}/`, blogDateToIso(post.date)] as const),
+  blogPosts.map((post) => [`/blog/${post.slug}/`, blogDateToIso(post.dateIso ?? post.date)] as const),
 );
 
 const forumLastmod = new Map(
@@ -56,6 +56,15 @@ export function sitemapSerialize(item: SitemapItem): SitemapItem | undefined {
     return item;
   }
 
+  if (path.startsWith('/blog/')) {
+    item.priority = 0.7;
+    item.changefreq = 'monthly';
+    const blogDated = contentLastmod(path);
+    if (blogDated) item.lastmod = blogDated;
+    else delete item.lastmod;
+    return item;
+  }
+
   if (path === '/forum/') {
     item.priority = 0.8;
     item.changefreq = 'daily';
@@ -65,15 +74,6 @@ export function sitemapSerialize(item: SitemapItem): SitemapItem | undefined {
   if (path.startsWith('/forum/')) {
     item.priority = 0.6;
     item.changefreq = 'weekly';
-    return item;
-  }
-
-  if (path.startsWith('/blog/')) {
-    item.priority = 0.7;
-    item.changefreq = 'monthly';
-    const blogDated = contentLastmod(path);
-    if (blogDated) item.lastmod = blogDated;
-    else delete item.lastmod;
     return item;
   }
 
@@ -98,7 +98,9 @@ export function sitemapSerialize(item: SitemapItem): SitemapItem | undefined {
     path.startsWith('/status/')
   ) {
     if (path.startsWith('/status/')) {
-      return undefined;
+      item.priority = 0.7;
+      item.changefreq = 'weekly';
+      return item;
     }
     item.priority = 0.5;
     item.changefreq = 'yearly';

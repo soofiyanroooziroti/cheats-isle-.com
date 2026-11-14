@@ -271,7 +271,7 @@ export function productSchema(input: {
   sku?: string;
   productSlug?: string;
 }) {
-  const plans = getProductPlans(input.productSlug ?? input.sku ?? 'rust-cheat');
+  const plans = getProductPlans(input.productSlug ?? input.sku ?? 'the-isle-cheat');
   return {
     '@context': 'https://schema.org',
     '@type': 'Product',

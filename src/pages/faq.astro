@@ -24,9 +24,9 @@ const faqs = getAllFaqs();
   description={seo.description}
   jsonLd={[
     webPageSchema({
-      name: 'FAQ — Rust Cheats & Products',
+      name: 'FAQ — Isle Cheats & Products',
       description:
-        'Answers about Rust Cheats, the HWID spoofer, UGC recovery, EAC risk, and checkout on cheatrust.org.',
+        'Answers about Isle Cheats, the HWID spoofer, UGC recovery, EAC risk, and checkout on cheatsisle.com.',
       url: '/faq/',
     }),
     faqPageSchema(faqs.map((f, i) => ({ num: String(i + 1).padStart(2, '0'), q: f.q, a: f.a.replace(/<[^>]+>/g, '') }))),

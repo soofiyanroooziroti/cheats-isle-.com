@@ -2,7 +2,7 @@
   "steps": [
     {
       "title": "Check status",
-      "desc": "Confirm modules are online on cheatrust.org before you buy—especially after a Rust or EAC update."
+      "desc": "Confirm modules are online on cheatsisle.com before you buy—especially after a The Isle (Evrima) or Easy Anti-Cheat update."
     },
     {
       "title": "Pick a plan",
@@ -10,107 +10,81 @@
     },
     {
       "title": "Secure checkout",
-      "desc": "Complete checkout on Zadeyo. Your license unlocks in the portal with instant delivery."
+      "desc": "Complete checkout on the portal. Your license unlocks with instant delivery."
     },
     {
       "title": "Install & verify",
-      "desc": "Follow the setup guide, load a conservative preset, and test in a low-stakes mode before ranked play."
+      "desc": "Follow the setup guide, load a conservative preset, and test in a low-stakes herd before main play."
     }
   ],
   "howToGet": "How to get {name}",
   "cheats": {
     "groupNames": [
-      "Aimbot Options",
-      "Player Visual Options",
-      "Player Visual Options 2",
-      "Loot Visual Options",
-      "Weapon Options",
-      "Misc Options"
+      "Visual",
+      "Misc"
     ],
     "descs": [
-      "Sets how wide the aim assist looks for a target. A tighter FOV stays closer to where you are already aiming.",
-      "Slows how fast the crosshair closes the gap so the pull does not snap in one frame.",
-      "Controls how quickly aim assist moves once it has a target inside the FOV.",
-      "Holds the assist on the current target a little longer when they strafe or break the edge of the FOV.",
-      "Limits which targets the aim assist is allowed to pick, so it does not grab every model on screen.",
-      "Choose Closest, Head, Neck, or Chest as the preferred hitbox.",
-      "Two separate aim keys, including native controller binds, without a remap tool.",
-      "Aim assist only engages when the target is visible, not through solid cover.",
-      "Skips downed players so the assist stays on operators who are still up.",
-      "Draws the aim FOV circle on screen so you can see the cone you configured.",
-      "Draws a line to the current aim target so you can confirm who the assist selected.",
-      "Draws bone lines so you can read posture and peek timing.",
-      "Marks the head hitbox with a circle.",
-      "Puts a box around each player model for a fast read in a fight.",
-      "Shows how far the player is from you.",
-      "Shows the player name on the ESP label.",
-      "Shows the squad or team number so you can tell groups apart.",
-      "Shows the weapon the player is holding.",
-      "Shows which way the player is looking.",
-      "Draws a health bar on the player.",
-      "Draws a line from your view to the player.",
-      "Keeps downed players visible when you want to track a finished fight.",
-      "Shows the helmet name on the player.",
-      "Shows the helmet armor level.",
-      "Shows the armor piece name.",
-      "Shows the armor level.",
-      "Shows the chest bag name.",
-      "Shows the chest bag level.",
-      "Shows the operator or hero name.",
-      "Cuts player ESP past the distance you set so far targets do not clutter the screen.",
-      "Tune label color, size, transparency, and brightness so the overlay stays readable on your map.",
-      "Shows the name of loot on the ground or in containers.",
-      "Shows item rarity so higher-tier loot stands out.",
-      "Shows the item price or value readout.",
-      "Hides loot below the price you set.",
-      "Marks player corpses so you can find leftover gear.",
-      "Marks AI corpses separately from player bodies.",
-      "Marks computers you can interact with.",
-      "Weapon options cover recoil, spread, sway, and melee reach.",
-      "Each weapon line is its own toggle in the weapon options group.",
-      "Recoil, spread, and sway stay separate from aimbot smoothing.",
-      "Peek and neck view binds sit with the other weapon options.",
-      "Changes the camera field of view.",
-      "Toggles a third-person camera on a hotkey.",
-      "Offsets arm scale on X, Y, and Z.",
-      "Offsets weapon scale on X, Y, and Z.",
-      "Draws a crosshair when you want a fixed center mark.",
-      "Hides Player, AI, Item, Dead Container, or Computer markers while combat mode is on. Each type can be toggled.",
-      "Listed Misc toggle in this build. It is a menu option, not a separate product.",
-      "Save and load your aimbot, ESP, weapon, misc, and config layout instead of retuning every session."
+      "Highlights other survivors in Evrima",
+      "Marks AI characters on the map",
+      "Shows creatures and herds nearby",
+      "Draws a box around each target",
+      "Line from your view to the target",
+      "Shows the player or entity name",
+      "Meters from your camera",
+      "Marks bodies on the ground",
+      "Current health readout",
+      "Stamina bar or value",
+      "Growth stage for dinosaurs",
+      "Species label on models",
+      "Facing angle for players",
+      "Dot on the head bone",
+      "Only draws when line of sight is clear",
+      "Highlights gore interactables",
+      "Marks forage fruit",
+      "Water sources and drink spots",
+      "Caps draw range for every ESP type",
+      "Center reticle overlay",
+      "Menu action to respawn",
+      "Brightens dark areas for readability",
+      "Frames per second counter",
+      "Current render resolution",
+      "In-game or system clock",
+      "Rebind the menu toggle",
+      "Hides overlays instantly",
+      "Per-entity color pickers"
     ],
     "slides": [
       {
-        "alt": "Rust ESP on an operator in a firefight",
-        "caption": "ESP overlay",
-        "captionDesc": "Player highlights and bone ESP in a close-quarters fight."
+        "alt": "The Isle Evrima placeholder — Visual ESP menu tab on Windows PC",
+        "caption": "Visual ESP",
+        "captionDesc": "Player, NPC, and animal toggles in the loader."
       },
       {
-        "alt": "Rust scoped view with ESP markers on targets",
-        "caption": "Scoped ESP",
-        "captionDesc": "Distance and target markers through optics."
+        "alt": "The Isle Evrima placeholder — species and growth ESP labels",
+        "caption": "Growth read",
+        "captionDesc": "Species, growth, and stamina overlays."
       },
       {
-        "alt": "Rust extraction mode with loot and player ESP",
-        "caption": "Extraction ESP",
-        "captionDesc": "Loot and operator awareness during extraction."
+        "alt": "The Isle Evrima placeholder — corpse and gore ESP markers",
+        "caption": "Corpse ESP",
+        "captionDesc": "Corpse, gore, and snapline options."
       },
       {
-        "alt": "Rust warehouse interior with player ESP",
-        "caption": "Warehouse ESP",
-        "captionDesc": "Player ESP in a close indoor fight."
+        "alt": "The Isle Evrima placeholder — fruit, water, and max distance sliders",
+        "caption": "Forage ESP",
+        "captionDesc": "Fruit, water, and Max Distance controls."
       },
       {
-        "alt": "Rust skeleton ESP on operators",
-        "caption": "Skeleton ESP",
-        "captionDesc": "Bone lines and player boxes."
+        "alt": "The Isle Evrima placeholder — misc menu with keybind rows",
+        "caption": "Misc & keys",
+        "captionDesc": "Crosshair, Fullbright, menu key, and panic key."
       }
     ],
     "overview": {
-      "title": "Built for Rust on Windows PC",
+      "title": "Built for The Isle (Evrima) on Windows PC",
       "paragraphs": [
-        "Rust Cheats covers aimbot, ESP, weapon options, misc options, and config options for Windows PC. Updates ship while your key is active, with Discord help for setup.",
-        "Always check availability on cheatrust.org before you launch, especially after an EasyAnti-Cheat (EAC) or client patch."
+        "The Isle cheats evrima loader ships Visual and Misc modules listed on this page for official Evrima servers. Updates ship while your key is active, with Discord help for setup.",
+        "Always check cheatsisle.com before you launch, especially after an Easy Anti-Cheat (EAC) or Evrima client patch."
       ]
     },
     "body": [
@@ -120,7 +94,7 @@
       },
       {
         "type": "p",
-        "text": "Aimbot, ESP, weapon options, misc options, and config options. The full list with a short note on each option is in the feature section on this page."
+        "text": "Visual and Misc groups cover every menu line on this page—player awareness, forage markers, and HUD helpers. Expand the feature section for short notes on each toggle."
       },
       {
         "type": "h2",
@@ -128,10 +102,10 @@
       },
       {
         "type": "p",
-        "text": "Monthly $35 USD or lifetime $150 USD. Instant digital delivery worldwide after checkout."
+        "text": "Monthly $35 USD (P30D) or lifetime $150 USD (P99Y). Instant digital delivery worldwide after checkout."
       }
     ],
-    "goodToKnow": "Rust and EasyAnti-Cheat (EAC) update often. Confirm availability on cheatrust.org before you launch. Overlay behavior may differ in menus or spectator views after patches.",
+    "goodToKnow": "The Isle (Evrima) and Easy Anti-Cheat (EAC) update often. Confirm availability on cheatsisle.com before you launch. Overlay behavior may differ in menus or spectator views after patches.",
     "limitations": "Third-party software can violate game terms and lead to bans. You use this software at your own risk. Compatibility can change after game, EAC, or Windows updates without notice.",
     "requirements": [
       "Windows 10/11",
@@ -145,9 +119,9 @@
   "spoofer": {
     "slides": [
       {
-        "alt": "HWID spoofer on Windows PC",
+        "alt": "The Isle HWID spoofer on Windows PC",
         "caption": "HWID spoofer",
-        "captionDesc": "Hardware fingerprint tools before you relaunch."
+        "captionDesc": "Hardware fingerprint tools before you relaunch Evrima."
       },
       {
         "alt": "Phoenix Satano HWID spoofer hardware fingerprint rotation on Windows PC",
@@ -161,9 +135,9 @@
       }
     ],
     "overview": {
-      "title": "HWID recovery workflow",
+      "title": "The Isle HWID spoofer workflow",
       "paragraphs": [
-        "HWID Spoofer focuses on hardware profile rotation when you need a clean machine context before relaunching Rust after a hardware flag.",
+        "The isle hwid spoofer focuses on hardware profile rotation when you need a clean machine context before relaunching Evrima after a hardware flag.",
         "Monthly and lifetime USD plans use the same checkout flow as the rest of the lineup."
       ]
     },
@@ -174,7 +148,7 @@
       },
       {
         "type": "p",
-        "text": "Use when fresh accounts fail on one PC but work elsewhere—not for account-only bans. Pair with conservative cheat presets after verification."
+        "text": "Use when fresh accounts fail on one PC but work elsewhere—not for account-only bans. Pair with conservative ESP presets after verification."
       },
       {
         "type": "h2",
@@ -182,10 +156,10 @@
       },
       {
         "type": "p",
-        "text": "Monthly $35 USD or lifetime $150 USD."
+        "text": "Monthly $50 USD (P30D) or lifetime $150 USD (P99Y)."
       }
     ],
-    "goodToKnow": "HWID tools change how your PC fingerprint appears—they do not remove account bans by themselves. Follow portal guides before launching Rust again.",
+    "goodToKnow": "HWID tools change how your PC fingerprint appears—they do not remove account bans by themselves. Follow portal guides before launching The Isle (Evrima) again.",
     "limitations": "Spoofing carries technical risk and may violate game terms. Results vary by ban type and driver setup. Use only on systems you own.",
     "requirements": [
       "Windows 10 or 11 64-bit with administrator rights.",
@@ -205,26 +179,34 @@
   "ugc": {
     "slides": [
       {
-        "alt": "UGC account recovery workspace preview on Windows PC",
+        "alt": "The Isle unban tool workspace preview on Windows PC",
         "caption": "Account recovery",
-        "captionDesc": "Appeal workspace shared across stores."
+        "captionDesc": "Templates, evidence lists, and follow-up in one workspace."
       }
     ],
     "overview": {
-      "title": "UGC Account recovery workspace",
+      "title": "The isle unban tool workspace",
       "paragraphs": [
-        "UGC Account recovery helps organize ban appeals and recovery cases with templates, evidence lists, and follow-up reminders.",
+        "The isle unban tool helps organize ban appeals and recovery cases with templates, evidence lists, and follow-up reminders.",
         "Instant digital delivery after secure checkout, with Discord support for setup questions."
       ]
     },
     "body": [
       {
         "type": "h2",
-        "text": "Appeal workflows"
+        "text": "The isle unban appeals"
       },
       {
         "type": "p",
-        "text": "Build custom appeal paths, automate dispute steps, and track case status when gaming accounts are locked or restricted."
+        "text": "Build custom the isle unban appeal paths, automate dispute steps, and track case status when Evrima accounts are locked or restricted."
+      },
+      {
+        "type": "h2",
+        "text": "The isle unban evidence"
+      },
+      {
+        "type": "p",
+        "text": "Use checklists so each the isle unban packet includes screenshots, timestamps, and the policy section you are citing."
       },
       {
         "type": "h2",
@@ -232,11 +214,11 @@
       },
       {
         "type": "p",
-        "text": "Monthly $35 USD or lifetime $150 USD."
+        "text": "Monthly $35 USD (P30D) or lifetime $150 USD (P99Y)."
       }
     ],
-    "goodToKnow": "Gather order email, account details, and restriction screenshots before opening a ticket. UGC structures appeals—it does not bypass platform review.",
-    "limitations": "UGC does not guarantee account restoration. Results vary by case type and platform policy.",
+    "goodToKnow": "Gather order details, account facts, and restriction screenshots before opening a ticket. The isle unban tool structures appeals—it does not bypass platform review.",
+    "limitations": "The isle unban tool does not guarantee account restoration. Results vary by case type and platform policy.",
     "requirements": [
       "Windows 10 or 11 (64-bit).",
       "Internet access for workflow sync and updates.",

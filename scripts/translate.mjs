@@ -338,7 +338,7 @@ Rules:
 - Keep every JSON key unchanged (id, href, slug, domain, discord, icon, topic, bento, tags, etc.).
 - Translate human-readable string values only.
 - Keep every placeholder like [[T1]], [[T2]] exactly as-is (do not translate or remove them).
-- Keep brand "Cheats for Rust", domain cheatrust.org, USD prices, product slugs, and external URLs in English/Latin where shown.
+- Keep brand "The Isle Cheats", domain cheatsisle.com, USD prices, product slugs, and external URLs in English/Latin where shown.
 - Do not translate footer "More sites" link labels for Unturned, Aion 2, or CS2 — leave those product names as in English.
 - Never use the words "undetected" or "safe".
 - Write natural native copy for gamers; avoid word-for-word English calques.
@@ -349,13 +349,13 @@ ${protectedText}`;
 
 function seoPrompt(locale, protectedText) {
   const hints = localeSeoKeywords[locale] ?? {};
-  return `You are an SEO copywriter and translator for a Rust (PC) software store.
+  return `You are an SEO copywriter and translator for a The Isle (Evrima) software store.
 Translate this SEO JSON from English to ${LANG_NAME[locale]} (${locale}).
 
 Local keyword guidance (use naturally in titles/descriptions — do NOT keyword-stuff):
-- Home primary: ${hints.homePrimary ?? 'Rust Cheats'}
-- Cheats product: ${hints.cheatsProduct ?? 'Rust Cheats'}
-- HWID spoofer: ${hints.spoofer ?? 'Rust HWID spoofer'}
+- Home primary: ${hints.homePrimary ?? 'Isle Cheats'}
+- Cheats product: ${hints.cheatsProduct ?? 'Isle Cheats'}
+- HWID spoofer: ${hints.spoofer ?? 'The Isle HWID spoofer'}
 - UGC recovery: ${hints.ugc ?? 'UGC account recovery'}
 - Related terms natives search: ${hints.terms ?? 'aimbot, ESP, loot, spoofer, EAC'}
 
@@ -364,17 +364,17 @@ Rules:
 - Translate title and description strings in site.* and pages.* paths.
 - One primary keyword focus per page path (mirror English intent, local wording).
 - Title ≤ 60 characters where possible; meta description ≤ 160 characters.
-- Keep paths as keys unchanged (/products/rust-cheats/, etc.).
-- Keep brand "Cheats for Rust", domain cheatrust.org, USD prices, and product slugs in English.
+- Keep paths as keys unchanged (/products/the-isle-cheats/, etc.).
+- Keep brand "The Isle Cheats", domain cheatsisle.com, USD prices, and product slugs in English.
 - Never use the words "undetected" or "safe".
-- Rust, EAC, HWID, ESP, aimbot may stay Latin where gamers expect them.
+- The Isle, Evrima, EAC, HWID, ESP may stay Latin where gamers expect them.
 
 JSON to translate:
 ${protectedText}`;
 }
 
 function productJsonPrompt(locale, protectedText) {
-  return `You are a professional translator for a Rust (PC) software product store.
+  return `You are a professional translator for a The Isle (Evrima) software product store.
 Translate this product-page JSON from English to ${LANG_NAME[locale]} (${locale}).
 
 Rules:
@@ -382,7 +382,7 @@ Rules:
 - Translate all human-readable strings (overview, body, steps, goodToKnow, limitations, requirements, groupNames, descs, slides, features arrays).
 - Keep JSON keys unchanged (cheats, spoofer, ugc, steps, howToGet, etc.).
 - Keep placeholder {name} in howToGet exactly as-is.
-- Keep brand "Rust Cheats", domain cheatrust.org, USD prices, P30D, P99Y, Zadeyo, Discord, EAC, HWID, UGC, ESP, aimbot, FOV where gamers expect Latin.
+- Keep brand "Isle Cheats", domain cheatsisle.com, USD prices, P30D, P99Y, Zadeyo, Discord, EAC, HWID, UGC, ESP, aimbot, FOV where gamers expect Latin.
 - Feature option names like "FOV", "Smooth", "Skeleton" may stay English if that is standard in ${LANG_NAME[locale]} gaming UI; translate groupNames and all description sentences fully.
 - Never use the words "undetected" or "safe".
 
@@ -391,7 +391,7 @@ ${protectedText}`;
 }
 
 function forumJsonPrompt(locale, protectedText) {
-  return `You are a professional translator for a gaming software community forum (Rust on PC).
+  return `You are a professional translator for a gaming software community forum (The Isle on PC).
 Translate this forum JSON from English to ${LANG_NAME[locale]} (${locale}).
 
 Rules:
@@ -400,7 +400,7 @@ Rules:
 - Keep post slug keys unchanged (ace-status-before-launch, etc.).
 - Keep author names unchanged when present in source (forum handles stay as-is).
 - Keep every [[T#]] placeholder exactly as-is.
-- Keep brand "Cheats for Rust", domain cheatrust.org, and product paths in English/Latin where shown.
+- Keep brand "The Isle Cheats", domain cheatsisle.com, and product paths in English/Latin where shown.
 - Never use the words "undetected" or "safe".
 
 JSON to translate:
@@ -588,7 +588,7 @@ function ensureEnglishExport() {
     !fs.existsSync(seoEnPath) ||
     isEmptyJsonFile(seoEnPath);
   if (needs || (FORCE && process.env.I18N_EXPORT_BEFORE_TRANSLATE === '1')) {
-    console.log('translate: refreshing src/i18n/en.json and seo/en.json from en.ts…');
+    console.log('translate: refreshing src/i18n/en.json and seo/en.json from generate-i18n-entry…');
     const script = path.join(root, 'export-i18n-en.mjs');
     const run = spawnSync('npx', ['tsx', script], { cwd: projectRoot, stdio: 'inherit', shell: true });
     if (run.status !== 0) {

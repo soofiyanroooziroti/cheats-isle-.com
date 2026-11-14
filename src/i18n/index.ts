@@ -12,7 +12,6 @@ import {
 } from './locales';
 import { getLocaleFromPath, localePath, stripLocaleFromPath } from './routing';
 import type { NavLink, Translations } from './types';
-import { getBlogLocalesForSlug } from '../data/blog/loader';
 
 export { getLocaleFromPath, localePath, stripLocaleFromPath } from './routing';
 
@@ -42,7 +41,7 @@ function jsonForLocale(locale: Locale): Record<string, unknown> | undefined {
 const NAV_PATHS = [
   '/',
   PRODUCT_CATALOG,
-  '/product/rust-cheat/#features',
+  '/product/the-isle-cheat/#features',
   '/blog/',
   '/forum/',
   '/faq/',
@@ -74,7 +73,7 @@ function localizeTranslationHrefs(merged: Translations, locale: Locale): Transla
   if (merged.footer.resourceLinks) {
     merged.footer.resourceLinks = merged.footer.resourceLinks.map((link, i) => {
       const enLink = enSource.footer.resourceLinks?.[i];
-      const hrefs = ['/blog/', '/product/rust-cheat/', PRODUCT_CATALOG, '/support/'];
+      const hrefs = ['/blog/', '/product/the-isle-cheat/', PRODUCT_CATALOG, '/support/'];
       return {
         ...link,
         href: localizeHref(hrefs[i] ?? '/', locale),
@@ -108,15 +107,15 @@ function applySupportChannelUrls(merged: Translations): void {
     if (channel.icon === 'messageCircle') channel.href = '/forum/';
     else if (channel.icon === 'headphones' || channel.icon === 'clock') {
       channel.href = DISCORD_INVITE_URL;
-    } else if (channel.icon === 'users') channel.href = checkoutPath('rustCheat');
+    } else if (channel.icon === 'users') channel.href = checkoutPath('isleCheat');
   }
   const items = merged.faq?.items;
   if (Array.isArray(items)) {
     for (const item of items) {
       if (item && typeof item === 'object' && 'aHtml' in item && typeof item.aHtml === 'string') {
         item.aHtml = item.aHtml.replace(
-          /href="(?:https:\/\/zadeyo\.com\/go\/SOOFIYAN\?to=%2Fproducts%2Frust|\/go\/rust\/?)"/gi,
-          `href="${CHECKOUT.rustCheat}"`,
+          /href="(?:https:\/\/zadeyo\.com\/go\/SOOFIYAN\?to=%2Fproducts%2Fthe-isle-novaxware|\/go\/the-isle-cheat\/?)"/gi,
+          `href="${CHECKOUT.isleCheat}"`,
         );
       }
     }
@@ -177,11 +176,6 @@ export interface AlternateLanguage {
 }
 
 function localeHasPath(basePath: string, locale: Locale): boolean {
-  const blogMatch = basePath.match(/^\/blog\/([^/]+)\/?$/);
-  if (blogMatch) {
-    const slug = blogMatch[1]!;
-    return getBlogLocalesForSlug(slug).includes(locale);
-  }
   if (basePath.match(/^\/forum\/([^/]+)\/?$/)) {
     return locale === defaultLocale;
   }

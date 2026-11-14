@@ -27,5 +27,7 @@ pnpm-debug.log*
 previous cursor chats/
 
 # local image bundles (not for git)
-cheatrust-images.zip
-_cheatrust-images-extract/
+cheatsisle-images-and-prompt.zip
+cheatsisle-images-and-prompt/
+legacy-clone-images.zip
+_legacy-clone-images-extract/

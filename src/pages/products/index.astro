@@ -11,6 +11,7 @@ import { breadcrumbSchema, collectionPageSchema, itemListSchema } from '../../ut
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import CatalogCard from '../../components/CatalogCard.astro';
 import { productPath } from '../../utils/path';
+import { catalogBuyLabel, catalogFeatureTotal, catalogPillLabel } from '../../utils/catalog-card';
 
 const seo = resolvePageSeo('/products/');
 const breadcrumbs = [
@@ -25,12 +26,7 @@ function cardIcon(product: (typeof productPages)[number]) {
   return productCategoryIcons[product.category ?? ''] ?? 'package';
 }
 
-function cardLabel(product: (typeof productPages)[number]) {
-  if (product.kind === 'tier') {
-    return product.tier ?? product.name;
-  }
-  return product.category ?? 'Utility';
-}
+const pricing = t.pricing as Record<string, string>;
 ---
 
 <BaseLayout
@@ -63,21 +59,34 @@ function cardLabel(product: (typeof productPages)[number]) {
       <div class="products-section__grid products-section__grid--wide mt-10">
         {productPages.map((product) => (
           <CatalogCard
-            class="catalog-card--products-section"
-            label={cardLabel(product)}
+            class:list={[
+              'catalog-card--products-section',
+              product.slug === 'the-isle-cheat' && 'catalog-card--has-ribbon',
+              product.slug === 'ugc' && 'catalog-card--products-ugc',
+            ]}
+            label={catalogPillLabel(product)}
             title={product.title}
             href={productPath(product.slug)}
             buyUrl={product.buyUrl}
             productSlug={product.slug}
             features={product.features}
-            more={product.more}
+            featureTotal={catalogFeatureTotal(product)}
             icon={cardIcon(product)}
-            badge={product.badge}
             variant={product.variant}
-            featured={product.slug === 'rust-cheat'}
-            buyLabel={product.slug === 'spoofer' ? 'Buy the spoofer' : product.slug === 'ugc' ? 'Buy UGC recovery' : 'Buy the loader'}
+            featured={product.slug === 'the-isle-cheat'}
+            featuredRibbon={pricing.recommended ?? 'Recommended'}
+            buyEmphasis
+            showStatusPill={product.slug === 'the-isle-cheat'}
+            productsGridStackedLayout={product.slug === 'the-isle-cheat'}
+            buyLabel={catalogBuyLabel(product.slug)}
             viewLabel="View details"
-            maxFeatures={3}
+            maxFeatures={
+              product.slug === 'the-isle-cheat'
+                ? product.features.length
+                : product.slug === 'ugc'
+                  ? 6
+                  : 3
+            }
           />
         ))}
       </div>

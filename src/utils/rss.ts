@@ -18,7 +18,8 @@ export function buildRssFeed(): string {
   const items = blogPosts
     .map((post) => {
       const link = canonicalUrl(blogPostPath(post.slug));
-      const pubDate = new Date(parseBlogDate(post.date)).toUTCString();
+      const iso = post.dateIso && /^\d{4}-\d{2}-\d{2}$/.test(post.dateIso) ? post.dateIso : parseBlogDate(post.date);
+      const pubDate = new Date(`${iso}T12:00:00.000Z`).toUTCString();
       return `
     <item>
       <title>${escapeXml(post.title)}</title>
@@ -34,9 +35,9 @@ export function buildRssFeed(): string {
   return `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rust Cheats guides</title>
+    <title>Isle Cheats guides</title>
     <link>${SITE_ORIGIN}/blog/</link>
-    <description>Rust ESP, aimbot, weapon, misc, and config guides from cheatrust.org.</description>
+    <description>The Isle (Evrima) loader, HWID spoofer, and unban tool guides from cheatsisle.com.</description>
     <language>en-us</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <atom:link href="${feedUrl}" rel="self" type="application/rss+xml" />

@@ -115,12 +115,17 @@ const blogFaqs: SiteFaqItem[] = post.faqs?.length
             <ResponsiveImage
               src={post.image}
               alt={post.imageAlt ?? post.title}
-              width={post.imageWidth ?? 960}
-              height={post.imageHeight ?? 540}
+              width={post.imageWidth ?? 1200}
+              height={post.imageHeight ?? 675}
               loading="eager"
               fetchPriority="high"
               sizes="(min-width: 768px) 720px, 100vw"
-              class="w-full object-cover"
+              class:list={[
+                'w-full',
+                post.imageWidth === 1330 && post.imageHeight === 840
+                  ? 'object-contain object-center'
+                  : 'object-cover',
+              ]}
             />
           </figure>
 
@@ -196,8 +201,8 @@ const blogFaqs: SiteFaqItem[] = post.faqs?.length
           </div>
 
           <nav class="blog-article__actions" aria-label="Continue reading">
-            <Button as="a" href={checkoutPath('rustCheat')} variant="primary" aria-label={t.ui.checkoutAria} rel={CHECKOUT_LINK_REL} data-astro-reload data-astro-prefetch="false">
-              Buy Rust Cheats
+            <Button as="a" href={checkoutPath('isleCheat')} variant="primary" aria-label={t.ui.checkoutAria} rel={CHECKOUT_LINK_REL} data-astro-reload data-astro-prefetch="false">
+              Buy The Isle Cheats
               <Icon name="arrowRight" size={17} />
             </Button>
             <Button as="a" href={ROUTES.products} variant="outline">

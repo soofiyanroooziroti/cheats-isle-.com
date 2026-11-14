@@ -18,7 +18,7 @@ const spooferPlans: ProductPlan[] = [
 ];
 
 const plansBySlug: Record<string, ProductPlan[]> = {
-  'rust-cheat': cheatPlans,
+  'the-isle-cheat': cheatPlans,
   spoofer: spooferPlans,
   'hwid-spoofer': spooferPlans,
   ugc: cheatPlans,

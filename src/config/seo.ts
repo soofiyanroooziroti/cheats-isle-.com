@@ -1,13 +1,11 @@
 import { getPageSeoForLocale, getTranslations, defaultLocale } from '../i18n';
 import type { Locale } from '../i18n/locales';
-import { getHomeOgImage } from '../data/site-images';
 import { SITE_URL, SITE_DOMAIN as INDEXNOW_HOST_NAME } from './site';
 
 const baseT = getTranslations(defaultLocale);
 export const SITE_ORIGIN = SITE_URL;
 
-const homeOg = getHomeOgImage();
-export const DEFAULT_OG_IMAGE = homeOg.src;
+export const DEFAULT_OG_IMAGE = '/og-image.jpg';
 
 export const GA_MEASUREMENT_ID = import.meta.env.PUBLIC_GA_MEASUREMENT_ID as string | undefined;
 

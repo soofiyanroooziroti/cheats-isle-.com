@@ -1,10 +1,10 @@
 /** Primary keyword per core URL (null = no dedicated keyword). Value may be an array when multiple phrases belong to one page. */
 export const PAGE_KEYWORDS: Record<string, string | string[] | null> = {
-  '/': 'rust cheats',
+  '/': ['the isle evrima cheats', 'the isle cheats'],
   '/products/': null,
-  '/product/rust-cheat/': 'rust cheat',
-  '/product/spoofer/': ['rust hwid spoofer', 'spoofer rust'],
-  '/product/ugc/': 'rust unban tool',
+  '/product/the-isle-cheat/': 'the isle cheats evrima',
+  '/product/spoofer/': ['the isle hwid spoofer', 'the isle spoofer'],
+  '/product/ugc/': 'the isle unban tool',
   '/blog/': null,
   '/forum/': null,
   '/faq/': null,
@@ -19,14 +19,15 @@ export const PAGE_KEYWORDS: Record<string, string | string[] | null> = {
 export const NOINDEX_CANNIBALISM_SKIP = new Set(['/status/', '/404/']);
 
 export const PRODUCT_H1: Record<string, string> = {
-  'rust-cheat': 'Rust cheat for Windows PC',
-  spoofer: 'Rust HWID spoofer for Windows PC',
-  ugc: 'Rust unban tool for Windows PC',
+  'the-isle-cheat': 'Evrima loader for Windows PC',
+  spoofer: 'The Isle HWID Spoofer for Windows PC',
+  ugc: 'The Isle Unban Tool for Windows PC',
 };
 
-export const PRODUCT_PAGE_KEYWORDS: Record<string, string> = {
-  spoofer: 'rust hwid spoofer',
-  ugc: 'rust unban tool',
+export const PRODUCT_PAGE_KEYWORDS: Record<string, string | string[]> = {
+  'the-isle-cheat': 'the isle cheats evrima',
+  spoofer: ['the isle hwid spoofer', 'the isle spoofer'],
+  ugc: 'the isle unban tool',
 };
 
 export function primaryKeywords(): string[] {

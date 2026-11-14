@@ -25,19 +25,17 @@ function blogSlugFromPage(page: string): string | null {
 }
 
 export function getHomeHeroSlides(): ProductSlide[] {
-  return GALLERY_SLOTS.map((slot, index) => {
-    const entry = entryBySlot(slot);
-    if (!entry) {
-      throw new Error(`images.json missing slot ${slot}`);
-    }
-    const legacy = cheatHomeHeroSlides[index];
-    return {
-      src: entry.file,
-      alt: entry.alt,
-      caption: legacy?.caption ?? '',
-      captionDesc: legacy?.captionDesc ?? '',
-      width: entry.width,
-      height: entry.height,
+  return cheatHomeHeroSlides.map((legacy, index) => {
+    const slot = GALLERY_SLOTS[index];
+    const entry = slot ? entryBySlot(slot) : undefined;
+  return {
+      src: legacy.src,
+      alt: legacy.alt,
+      caption: legacy.caption,
+      captionDesc: legacy.captionDesc,
+      width: legacy.width ?? entry?.width ?? 1280,
+      height: legacy.height ?? entry?.height ?? 720,
+      objectFit: legacy.objectFit,
     };
   });
 }

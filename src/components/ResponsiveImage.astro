@@ -32,8 +32,10 @@ const {
   desktopOnly = false,
 } = Astro.props;
 
+const isPlaceholderAsset =
+  src.includes('/images/placeholder') || src === '/images/placeholder.png';
 const isRaster = /\.(png|jpe?g|webp)$/i.test(src);
-const useResponsiveWebp = isRaster && hasResponsiveWebpVariants(src);
+const useResponsiveWebp = isRaster && !isPlaceholderAsset && hasResponsiveWebpVariants(src);
 const srcSet = useResponsiveWebp ? responsiveSrcSet(src, widths) : undefined;
 const imgSrc = desktopOnly
   ? 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'
@@ -45,7 +47,14 @@ const pictureMedia = desktopOnly ? '(min-width: 1024px)' : undefined;
 ---
 
 {
-  isRaster && useResponsiveWebp ? (
+  isPlaceholderAsset ? (
+    <div
+      role="img"
+      aria-label={alt}
+      class:list={['block w-full bg-neutral-200 dark:bg-neutral-800', className]}
+      style={`width:100%;aspect-ratio:${width} / ${height};max-width:${width}px`}
+    />
+  ) : isRaster && useResponsiveWebp ? (
     <picture>
       <source type="image/webp" srcset={srcSet} sizes={pictureSizes} media={pictureMedia} />
       <img

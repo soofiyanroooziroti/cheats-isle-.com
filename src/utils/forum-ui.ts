@@ -65,8 +65,8 @@ export type ForumUi = {
 
 const defaults: ForumUi = {
   eyebrow: 'Community',
-  title: 'Rust community forum',
-  subtitle: 'Setup, aim, ESP, and plan questions with marked developer replies.',
+  title: 'Forum: The Isle community setup and plans',
+  subtitle: 'Evrima visuals, animal and water markers, status, and which product you need. Developer replies are marked on each thread.',
   breadcrumb: 'Forum',
   exploreGuides: 'Explore the guides',
   sortPopular: 'Popular',
@@ -89,7 +89,7 @@ const defaults: ForumUi = {
   paginationAria: 'Discussion pages',
   previous: 'Previous',
   next: 'Next',
-  sidebarAboutTitle: 'Rust community',
+  sidebarAboutTitle: 'The Isle community',
   sidebarAboutCopy:
     'Questions about the cheat, the HWID spoofer, and UGC recovery. Developer replies stay on the thread.',
   sidebarTopics: 'topics',

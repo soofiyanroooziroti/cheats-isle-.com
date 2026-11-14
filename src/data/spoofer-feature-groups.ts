@@ -7,7 +7,7 @@ function spooferFeature(name: string, desc: string): ProductFeatureGroup {
 export const SPOOFER_FEATURE_GROUPS: ProductFeatureGroup[] = [
   spooferFeature(
     'Hardware spoofer with cleaner',
-    'Spoofer pass plus cleaner before you sign into Rust on this PC.',
+    'Spoofer pass plus cleaner before you sign into The Isle on this PC.',
   ),
   spooferFeature(
     'Disk serial and MAC rotation',

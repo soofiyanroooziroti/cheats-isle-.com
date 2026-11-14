@@ -9,65 +9,77 @@ export interface StatusLegendItem {
   meaning: string;
 }
 
-export interface StatusUpdateEntry {
-  title: string;
-  /** Display range or date, e.g. 5 Nov 2026 */
+export interface StatusPatchEntry {
+  build: string;
   when: string;
   summary: string;
 }
 
+export interface StatusCheatUpdateEntry {
+  when: string;
+  summary: string;
+  /** Set false when the changelog line is published (remove TODO from copy). */
+  todo?: boolean;
+}
+
 /** Current store state. Green = updated and usable. */
 export const STATUS_TONE: StatusTone = 'green';
-export const STATUS_LABEL = 'Updated';
+
+export const STATUS_TONE_LABELS: Record<StatusTone, string> = {
+  green: 'Ready',
+  blue: 'Updating',
+  red: 'Paused',
+};
+
+export function getStatusLabel(tone: StatusTone = STATUS_TONE): string {
+  return STATUS_TONE_LABELS[tone];
+}
+
+/** Active state label for /status/ header and pills. */
+export const STATUS_LABEL = getStatusLabel();
+
+export const STATUS_EVRMA_BUILD = '0.21.772';
+export const STATUS_EVRMA_BUILD_RELEASE = '3 Aug 2026';
+
+export const STATUS_REQUIREMENTS = [
+  'Windows 10 or 11 (64-bit)',
+  'The Isle Evrima only (not legacy The Isle)',
+  'Easy Anti-Cheat (EAC) enabled',
+] as const;
 
 export const STATUS_LEGEND: StatusLegendItem[] = [
-  { tone: 'green', label: 'Green', meaning: 'Updated. You can use it.' },
-  { tone: 'red', label: 'Red', meaning: 'Not updated. Do not use it.' },
-  { tone: 'blue', label: 'Blue', meaning: 'Updating. Developers are working. It is not ready yet.' },
+  { tone: 'green', label: 'Ready', meaning: 'The current build is updated.' },
+  { tone: 'blue', label: 'Updating', meaning: 'Our team is working on it, not ready yet.' },
+  { tone: 'red', label: 'Paused', meaning: "Not updated, don't launch." },
 ];
 
-/** Newest first. */
-export const STATUS_RECENT_UPDATES: StatusUpdateEntry[] = [
+/** Evrima patches from Steam announcements (newest first). */
+export const STATUS_GAME_PATCHES: StatusPatchEntry[] = [
   {
-    title: 'Scripting ban wave',
-    when: '5 Nov 2026',
-    summary:
-      'With the November 2026 patch, Facepunch banned more than 3,000 accounts tied to public and private third-party scripting providers.',
+    build: '0.21.772',
+    when: '3 Aug 2026',
+    summary: 'Austroraptor, Mangroves, and skin pattern updates.',
   },
   {
-    title: 'Secure Boot and TPM 2.0',
-    when: 'Feb–Mar 2026',
-    summary:
-      'Facepunch let server owners require Secure Boot and TPM 2.0 through Easy Anti-Cheat. The check targets kernel-level tools and makes hardware-ban evasion harder. Player reaction is mixed: some want the extra bar, others say older PCs get hit while some providers still adapt.',
+    build: '0.21.734',
+    when: '9 Jul 2026',
+    summary: 'Hill sliding changes and bug fixes.',
   },
   {
-    title: 'EAC enforcement',
-    when: 'Ongoing',
-    summary:
-      'Facepunch Support says EAC bans for third-party software, injected code, aimbots, and ESP stay permanent and are often delayed so detection timing stays unclear. New accounts used to dodge an active ban are treated as ban evasion.',
+    build: '0.21.720',
+    when: '3 Jul 2026',
+    summary: 'Kentrosaurus, Redwoods, and Mangroves biomes.',
   },
 ];
 
-export const STATUS_GAME_NOTES: StatusUpdateEntry[] = [
-  {
-    title: 'System and platform',
-    when: '5 Nov 2026',
-    summary:
-      'Printed and Polished dropped Intel Mac support (Apple Silicon only), removed the option to turn volumetric clouds off after optimizing them, and turned multithreaded player update jobs on by default.',
-  },
-  {
-    title: 'Combat and monuments',
-    when: '5 Nov 2026',
-    summary:
-      'Military Tunnels entrance blockers now need explosives. Handmade SMG damage went from 20 to 21. Sprinting costs 10% more calories and hydration.',
-  },
-  {
-    title: 'Loot and vehicles',
-    when: '5 Nov 2026',
-    summary:
-      'Loot panels close when you walk out of range. Diving propulsion vehicles accelerate faster and burn less fuel. PT boat turret handling was improved.',
-  },
-];
+export const STATUS_BAN_RISK =
+  'Third-party tools for The Isle can violate game terms and trigger Easy Anti-Cheat action. You use this software at your own risk, including possible account or hardware restrictions.';
+
+/** @deprecated Use STATUS_GAME_PATCHES */
+export const STATUS_GAME_NOTES: never[] = [];
+
+/** @deprecated Use STATUS_CHEAT_UPDATES */
+export const STATUS_RECENT_UPDATES: never[] = [];
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
@@ -83,7 +95,28 @@ export function formatStatusUpdated(isoDate: string = STATUS_LAST_UPDATED): stri
   return `${day} ${label} ${year}`;
 }
 
-/** Shared line for /status/ and the home setup strip. */
-export function formatActiveStatusLine(isoDate: string = STATUS_LAST_UPDATED): string {
-  return `Updated · ${formatStatusUpdated(isoDate)}`;
+/** Muted meta beside the status pill. */
+export function formatLastUpdatedLine(isoDate: string = STATUS_LAST_UPDATED): string {
+  return `Last updated ${formatStatusUpdated(isoDate)}`;
+}
+
+/** Pill label from current STATUS_TONE. */
+export function formatStatusPillLabel(tone: StatusTone = STATUS_TONE): string {
+  return getStatusLabel(tone);
+}
+
+/** Loader changelog for The Isle Cheats (newest first). */
+export function getStatusCheatUpdates(): StatusCheatUpdateEntry[] {
+  return [
+    {
+      when: formatStatusUpdated(STATUS_LAST_UPDATED),
+      summary: 'TODO: Publish menu notes for Evrima build 0.21.772 and verify Visual ESP defaults.',
+      todo: true,
+    },
+    {
+      when: '10 Oct 2026',
+      summary: 'TODO: Add panic-key reminder and Misc HUD copy for Fullbright after the September EAC patch.',
+      todo: true,
+    },
+  ];
 }

@@ -13,34 +13,21 @@ import ContentSections from '../components/ContentSections.astro';
 import { resolvePageSeo } from '../config/seo';
 import { faqPageSchema, organizationSchema, websiteSchema } from '../utils/schema';
 import { getLandingFaqs } from '../data/faq';
-import { heroSlides } from '../data/products';
-import { getHomeOgImage } from '../data/site-images';
-import { heroLcpPreload } from '../utils/responsiveImage';
+import { DEFAULT_OG_IMAGE, DEFAULT_OG_IMAGE_HEIGHT, DEFAULT_OG_IMAGE_WIDTH } from '../config/seo';
 
 const seo = resolvePageSeo('/');
 const homeFaqs = getLandingFaqs();
-const homeOg = getHomeOgImage();
-const heroLcp = heroLcpPreload(heroSlides[0]!.src);
 ---
 
 <BaseLayout
   title={seo.title}
   description={seo.description}
-  ogImage={homeOg.src}
-  ogImageAlt={homeOg.alt}
-  ogImageWidth={homeOg.width}
-  ogImageHeight={homeOg.height}
+  ogImage={DEFAULT_OG_IMAGE}
+  ogImageAlt="The Isle Evrima cheats — Isle Cheats social preview placeholder"
+  ogImageWidth={DEFAULT_OG_IMAGE_WIDTH}
+  ogImageHeight={DEFAULT_OG_IMAGE_HEIGHT}
   jsonLd={[websiteSchema(), organizationSchema(), faqPageSchema(homeFaqs.map((f, i) => ({ num: String(i + 1).padStart(2, '0'), q: f.q, a: f.a.replace(/<[^>]+>/g, '') })))]}
 >
-  <link
-    slot="head"
-    rel="preload"
-    as="image"
-    href={heroLcp.href}
-    {...(heroLcp.srcset ? { imagesrcset: heroLcp.srcset, imagesizes: heroLcp.sizes } : {})}
-    type="image/webp"
-    fetchpriority="high"
-  />
   <HeroSection />
   <FeaturesSection />
   <ProductsSection />

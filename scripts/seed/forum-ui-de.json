@@ -1,6 +1,6 @@
 {
   "eyebrow": "Community",
-  "title": "Rust-Community-Forum",
+  "title": "The Isle-Forum",
   "subtitle": "Einrichtung, Aim, ESP und Fragen zu Plänen mit markierten Entwicklerantworten.",
   "breadcrumb": "Forum",
   "postsAria": "Community-Beiträge",
@@ -27,7 +27,7 @@
   "emptyFilter": "Keine Diskussionen passen. Versuche eine andere Suche oder ein anderes Thema.",
   "previous": "Zurück",
   "next": "Weiter",
-  "sidebarAboutTitle": "Rust-Community",
+  "sidebarAboutTitle": "The Isle",
   "sidebarAboutCopy": "Fragen zum Cheat, zum HWID spoofer und zur UGC-Wiederherstellung. Entwicklerantworten bleiben im Thread.",
   "sidebarTopics": "Themen",
   "sidebarExploreGuides": "Alle Leitfäden entdecken",

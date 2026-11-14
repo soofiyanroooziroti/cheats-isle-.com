@@ -8,13 +8,14 @@ const root = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.join(root, '..');
 
 const BASE_TERMS = [
-  'Rust',
-  'Rust Cheats',
-  'Cheats for Rust',
+  'The Isle',
+  'The Isle Cheats',
+  'The Isle Evrima',
+  'Isle Cheats',
   'HWID Spoofer',
   'UGC Account Recovery',
-  'EasyAnti-Cheat',
-  'cheatrust.org',
+  'Easy Anti-Cheat',
+  'cheatsisle.com',
   'Unturned cheats',
   'Aion 2 hack',
   'CS2 cheats',

@@ -1,94 +1,92 @@
 import type { AcquisitionStep, ProductSlide, SystemRequirement } from './product-types';
 import type { Block } from './product-locale-types';
-import { RUST_CHEAT_FEATURE_GROUPS } from './rust-cheat-feature-groups';
+import { THE_ISLE_CHEAT_FEATURE_GROUPS } from './the-isle-cheat-feature-groups';
 import { SPOOFER_FEATURE_GROUPS } from './spoofer-feature-groups';
-
-const placeholder = '/images/placeholder.png';
-const RUST_CHEAT_GALLERY = '/images/products';
-
-const rustCheatGallerySlides = {
-  visuals: {
-    src: `${RUST_CHEAT_GALLERY}/zadeyo-rust-1-visuals.webp`,
-    alt: 'Rust Cheats loader – Visual ESP menu on Windows PC',
-    caption: 'Visual ESP',
-    captionDesc: 'Player, scientist, and world label toggles in the loader.',
-  },
-  world: {
-    src: `${RUST_CHEAT_GALLERY}/zadeyo-rust-2-world.webp`,
-    alt: 'Rust Cheats loader – world and resource ESP on Windows PC',
-    caption: 'World ESP',
-    captionDesc: 'Ores, collectables, traps, and vehicles in one overlay.',
-  },
-  aim: {
-    src: `${RUST_CHEAT_GALLERY}/zadeyo-rust-3-aimbot.webp`,
-    alt: 'Rust Cheats loader – aimbot options on Windows PC',
-    caption: 'Aimbot options',
-    captionDesc: 'FOV, smoothing, and target rules for PvP.',
-  },
-  weapon: {
-    src: `${RUST_CHEAT_GALLERY}/zadeyo-rust-4-weapon.webp`,
-    alt: 'Rust Cheats loader – weapon options on Windows PC',
-    caption: 'Weapon options',
-    captionDesc: 'Recoil, spread, sway, and bow helpers.',
-  },
-  misc: {
-    src: `${RUST_CHEAT_GALLERY}/zadeyo-rust-5-misc.webp`,
-    alt: 'Rust Cheats loader – misc and config options on Windows PC',
-    caption: 'Misc & config',
-    captionDesc: 'Movement, view, and config save/load rows.',
-  },
-} as const satisfies Record<string, ProductSlide>;
-
-function rustCheatGallery(...keys: (keyof typeof rustCheatGallerySlides)[]): ProductSlide[] {
-  return keys.map((k) => rustCheatGallerySlides[k]);
-}
-
-const slide = (alt: string, caption: string, captionDesc: string): ProductSlide => ({
-  src: placeholder,
-  alt,
-  caption,
-  captionDesc,
-});
 
 /** Home hero slider only — not the cheats product gallery. */
 export const cheatHomeHeroSlides: ProductSlide[] = [
-  slide(
-    'Rust Cheats – placeholder hero screenshot for the Windows PC loader',
-    'Loader preview',
-    'Screenshot slot for the Rust cheat menu.',
-  ),
-  slide(
-    'Rust Cheats – placeholder second hero slide for player overlays',
-    'Overlay preview',
-    'Screenshot slot for player awareness tools.',
-  ),
-  slide(
-    'Rust Cheats – placeholder third hero slide for base and world tools',
-    'World tools',
-    'Screenshot slot for resource and base helpers.',
-  ),
-  slide(
-    'Rust Cheats – placeholder fourth hero slide for config presets',
-    'Config save',
-    'Screenshot slot for saved presets.',
-  ),
-  slide(
-    'Rust Cheats – placeholder fifth hero slide for raid encounters',
-    'Raid read',
-    'Screenshot slot for close-range fights.',
-  ),
-  slide(
-    'Rust Cheats – placeholder sixth hero slide for long-range tuning',
-    'Range tuning',
-    'Screenshot slot for distance engagements.',
-  ),
+  {
+    src: '/images/products/vendor-visuals.webp',
+    alt: 'Visuals tab of The Isle Cheats menu showing Player, NPC and Animal ESP options',
+    caption: 'Loader preview',
+    captionDesc: 'Screenshot slot for the Evrima menu on Windows PC.',
+    width: 1330,
+    height: 840,
+    objectFit: 'contain',
+  },
+  {
+    src: '/images/products/vendor-world.webp',
+    alt: 'World tab of The Isle Cheats menu with Corpse, Gore, Fruit, Water and World Distance options',
+    caption: 'ESP preview',
+    captionDesc: 'Screenshot slot for player awareness overlays.',
+    width: 1330,
+    height: 840,
+    objectFit: 'contain',
+  },
+  {
+    src: '/images/products/vendor-misc.webp',
+    alt: 'Misc tab of The Isle Cheats menu with Crosshair, Fullbright and display options',
+    caption: 'Misc HUD',
+    captionDesc: 'Screenshot slot for misc overlays.',
+    width: 1330,
+    height: 840,
+    objectFit: 'contain',
+  },
+  {
+    src: '/images/blog/spinosaurus.webp',
+    alt: 'Spinosaurus with a tall dorsal sail walking through grassland in The Isle',
+    caption: 'Species read',
+    captionDesc: 'Screenshot slot for dinosaur ESP tuning.',
+    width: 1200,
+    height: 675,
+    objectFit: 'cover',
+  },
+  {
+    src: '/images/blog/evrima-map.webp',
+    alt: 'Sandy beach shoreline with dinosaurs in The Isle',
+    caption: 'World ESP',
+    captionDesc: 'Screenshot slot for forage and water markers.',
+    width: 1200,
+    height: 675,
+    objectFit: 'cover',
+  },
 ];
+
+const galleryVisual: ProductSlide = {
+  src: '/images/products/vendor-visuals.webp',
+  alt: 'Visuals tab of The Isle Cheats menu showing Player, NPC and Animal ESP options',
+  caption: 'Visual ESP',
+  captionDesc: 'Player, NPC, and animal toggles in the loader.',
+  width: 1330,
+  height: 840,
+  objectFit: 'contain',
+};
+
+const galleryWorld: ProductSlide = {
+  src: '/images/products/vendor-world.webp',
+  alt: 'World tab of The Isle Cheats menu with Corpse, Gore, Fruit, Water and World Distance options',
+  caption: 'World markers',
+  captionDesc: 'Corpse, gore, fruit, water, and distance options.',
+  width: 1330,
+  height: 840,
+  objectFit: 'contain',
+};
+
+const galleryMisc: ProductSlide = {
+  src: '/images/products/vendor-misc.webp',
+  alt: 'Misc tab of The Isle Cheats menu with Crosshair, Fullbright and display options',
+  caption: 'Misc & keys',
+  captionDesc: 'Crosshair, Fullbright, menu key, and panic key.',
+  width: 1330,
+  height: 840,
+  objectFit: 'contain',
+};
 
 export const acquisitionSteps: AcquisitionStep[] = [
   {
     num: '01',
     title: 'Check status',
-    desc: 'Confirm modules are online on cheatrust.org before you buy—especially after a Rust or EasyAnti-Cheat update.',
+    desc: 'Confirm modules are online on cheatsisle.com before you buy—especially after a The Isle (Evrima) or Easy Anti-Cheat update.',
   },
   {
     num: '02',
@@ -103,26 +101,26 @@ export const acquisitionSteps: AcquisitionStep[] = [
   {
     num: '04',
     title: 'Install & verify',
-    desc: 'Follow the setup guide, load a conservative preset, and test on a low-stakes server before main play.',
+    desc: 'Follow the setup guide, load a conservative preset, and test in a low-stakes herd before main play.',
   },
 ];
 
 export const utilitySlides = {
   spoofer: [
     {
-      src: '/images/products/rust-hwid-spoofer-hero.webp',
-      alt: 'HWID spoofer on Windows PC',
+      src: '/images/products/hwid-spoofer-hero.webp',
+      alt: 'The Isle HWID spoofer on Windows PC',
       caption: 'HWID spoofer',
-      captionDesc: 'Hardware fingerprint tools before you relaunch.',
+      captionDesc: 'Hardware fingerprint tools before you relaunch Evrima.',
     },
     {
-      src: '/images/products/rust-hwid-spoofer-board.webp',
+      src: '/images/products/hwid-spoofer-board.webp',
       alt: 'Phoenix Satano HWID spoofer hardware fingerprint rotation on Windows PC',
       caption: 'Phoenix board',
       captionDesc: 'Disk, MAC, and GPU ID rotation.',
     },
     {
-      src: '/images/products/rust-hwid-spoofer-wh.webp',
+      src: '/images/products/hwid-spoofer-brand.webp',
       alt: 'Phoenix WH-Satano spoofer branding on Windows PC',
       caption: 'Phoenix WH',
       captionDesc: 'Spoofer workspace used on every store.',
@@ -131,7 +129,7 @@ export const utilitySlides = {
   ugc: [
     {
       src: '/images/products/ugc-account-recovery.webp',
-      alt: 'Rust unban tool workspace preview on Windows PC',
+      alt: 'The Isle unban tool workspace preview on Windows PC',
       caption: 'Account recovery',
       captionDesc: 'Templates, evidence lists, and follow-up in one workspace.',
     },
@@ -139,9 +137,9 @@ export const utilitySlides = {
 } as const;
 
 export const cheatsContent = {
-  images: rustCheatGallery('visuals', 'world', 'aim', 'weapon', 'misc'),
+  images: [galleryVisual, galleryWorld, galleryMisc],
   goodToKnow:
-    'Rust and EasyAnti-Cheat (EAC) update often. Confirm availability on cheatrust.org before you launch. Overlay behavior may differ in menus or spectator views after patches.',
+    'The Isle (Evrima) and Easy Anti-Cheat (EAC) update often. Confirm availability on cheatsisle.com before you launch. Overlay behavior may differ in menus or spectator views after patches.',
   limitations:
     'Third-party software can violate game terms and lead to bans. You use this software at your own risk. Compatibility can change after game, EAC, or Windows updates without notice.',
   systemRequirements: [
@@ -152,19 +150,19 @@ export const cheatsContent = {
     { icon: 'shieldCheck', text: 'TPM ON' },
     { icon: 'reqShieldAccount', text: 'SECURE BOOT ON' },
   ] as SystemRequirement[],
-  featureGroups: RUST_CHEAT_FEATURE_GROUPS,
+  featureGroups: THE_ISLE_CHEAT_FEATURE_GROUPS,
   overview: {
-    title: 'Built for Rust on Windows PC',
+    title: 'Built for The Isle on Windows PC',
     paragraphs: [
-      'Rust cheat loader ships Visual ESP, weapon, aimbot, misc, and config modules listed on this page for vanilla and modded servers. Updates ship while your key is active, with Discord help for setup.',
-      'Always check availability on cheatrust.org before you launch, especially after an EasyAnti-Cheat (EAC) or Rust client patch.',
+      'The Isle cheat loader ships Visual and Misc modules listed on this page for Evrima on Windows PC. Updates ship while your key is active, with Discord help for setup.',
+      'Always check availability on cheatsisle.com before you launch, especially after an Easy Anti-Cheat (EAC) or client patch.',
     ],
   },
   body: [
     { type: 'h2', text: 'Modules included' },
     {
       type: 'p',
-      text: 'Visual ESP Features (two groups), Weapon Options, Aimbot Options, Misc Options, and Config Options. The full list with a short note on each menu line is in the feature section on this page.',
+      text: 'Visual and Misc groups cover every menu line on this page—player ESP, dinosaur labels, world markers, crosshair, fullbright, FPS readouts, and custom keys.',
     },
     { type: 'h2', text: 'Plans' },
     {
@@ -177,7 +175,7 @@ export const cheatsContent = {
 export const spooferContent = {
   images: [...utilitySlides.spoofer],
   goodToKnow:
-    'HWID tools change how your PC fingerprint appears—they do not remove account bans by themselves. Follow portal guides before launching Rust again.',
+    'HWID tools change how your PC fingerprint appears—they do not remove account bans by themselves. Follow portal guides before launching The Isle again.',
   limitations:
     'Spoofing carries technical risk and may violate game terms. Results vary by ban type and driver setup. Use only on systems you own.',
   systemRequirements: [
@@ -188,9 +186,9 @@ export const spooferContent = {
   fullFeatures: SPOOFER_FEATURE_GROUPS.flatMap((group) => group.items.map((item) => item.name)),
   featureGroups: SPOOFER_FEATURE_GROUPS,
   overview: {
-    title: 'Rust HWID spoofer workflow',
+    title: 'The Isle HWID spoofer workflow',
     paragraphs: [
-      'Rust HWID spoofer focuses on hardware profile rotation when you need a clean machine context before relaunching Rust after a hardware flag.',
+      'The Isle HWID spoofer focuses on hardware profile rotation when you need a clean machine context before relaunching The Isle after a hardware flag.',
       'Monthly and lifetime USD plans use the same checkout flow as the rest of the lineup.',
     ],
   },
@@ -208,9 +206,9 @@ export const spooferContent = {
 export const ugcContent = {
   images: [...utilitySlides.ugc],
   goodToKnow:
-    'Gather order details, account facts, and restriction screenshots before opening a ticket. The rust unban tool structures appeals—it does not bypass platform review.',
+    'Gather order details, account facts, and restriction screenshots before opening a ticket. The Isle Unban Tool structures appeals—it does not bypass platform review.',
   limitations:
-    'The rust unban tool does not guarantee account restoration. Results vary by case type and platform policy.',
+    'The Isle Unban Tool does not guarantee account restoration. Results vary by case type and platform policy.',
   systemRequirements: [
     { icon: 'reqWindows', text: 'Windows 10 or 11 (64-bit).' },
     { icon: 'reqWifi', text: 'Internet access for workflow sync and updates.' },
@@ -226,22 +224,22 @@ export const ugcContent = {
     'Monthly and lifetime USD plans',
   ],
   overview: {
-    title: 'Rust unban tool workspace',
+    title: 'The Isle Unban Tool workspace',
     paragraphs: [
-      'Rust unban tool helps organize ban appeals and recovery cases with templates, evidence lists, and follow-up reminders.',
+      'The Isle Unban Tool helps organize ban appeals and recovery cases with templates, evidence lists, and follow-up reminders.',
       'Instant digital delivery after secure checkout, with Discord support for setup questions.',
     ],
   },
   body: [
-    { type: 'h2', text: 'Rust unban appeals' },
+    { type: 'h2', text: 'Isle unban appeals' },
     {
       type: 'p',
-      text: 'Build custom rust unban appeal paths, automate dispute steps, and track case status when Rust accounts are locked or restricted.',
+      text: 'Build custom isle unban appeal paths, automate dispute steps, and track case status when The Isle accounts are locked or restricted.',
     },
-    { type: 'h2', text: 'Rust unban evidence' },
+    { type: 'h2', text: 'Isle unban evidence' },
     {
       type: 'p',
-      text: 'Use checklists so each rust unban packet includes screenshots, timestamps, and the policy section you are citing.',
+      text: 'Use checklists so each isle unban packet includes screenshots, timestamps, and the policy section you are citing.',
     },
     { type: 'h2', text: 'Plans' },
     { type: 'p', text: 'Monthly $35 USD (P30D) or lifetime $150 USD (P99Y).' },

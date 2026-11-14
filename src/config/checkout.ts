@@ -5,7 +5,7 @@ export const CHECKOUT = CHECKOUT_URLS;
 export type CheckoutProduct = keyof typeof CHECKOUT;
 
 export const CHECKOUT_SLUGS: Record<CheckoutProduct, string> = {
-  rustCheat: 'rust',
+  isleCheat: 'the-isle-cheat',
   hwidSpoofer: 'hwid-spoofer',
   ugc: 'ugc',
 };
@@ -18,14 +18,17 @@ export const CHECKOUT_SLUG_TO_PRODUCT = Object.fromEntries(
 export const CHECKOUT_LINK_REL = 'sponsored nofollow noopener';
 
 export function isZadeyoHref(href: string): boolean {
-  return href.includes('zadeyo.com') || /^\/go\/(rust|hwid-spoofer|ugc)(\/|\?|$)/.test(href);
+  return (
+    href.includes('zadeyo.com') ||
+    /^\/go\/(the-isle-cheat|hwid-spoofer|ugc)(\/|\?|$)/.test(href)
+  );
 }
 
-export function checkoutPath(product: CheckoutProduct = 'rustCheat'): string {
+export function checkoutPath(product: CheckoutProduct = 'isleCheat'): string {
   return `/go/${CHECKOUT_SLUGS[product]}/`;
 }
 
-export const PRIMARY_CHECKOUT_PATH = checkoutPath('rustCheat');
+export const PRIMARY_CHECKOUT_PATH = checkoutPath('isleCheat');
 
 export function checkoutForSlug(slug: string): string {
   switch (slug) {
@@ -35,9 +38,9 @@ export function checkoutForSlug(slug: string): string {
     case 'ugc':
     case 'ugc-account-recovery':
       return checkoutPath('ugc');
-    case 'rust-cheat':
+    case 'the-isle-cheat':
     default:
-      return checkoutPath('rustCheat');
+      return checkoutPath('isleCheat');
   }
 }
 
@@ -52,8 +55,11 @@ export function resolveCheckoutHref(href: string): string {
     }
   }
 
-  if (href.includes('%2Fproducts%2Frust') || href.includes('/products/rust')) {
-    return checkoutPath('rustCheat');
+  if (
+    href.includes('%2Fproducts%2Fthe-isle-novaxware') ||
+    href.includes('/products/the-isle-novaxware')
+  ) {
+    return checkoutPath('isleCheat');
   }
   if (href.includes('%2Fproducts%2Fhwid-spoofer') || href.includes('/products/hwid-spoofer')) {
     return checkoutPath('hwidSpoofer');

@@ -47,13 +47,13 @@ const toc =
 
 const tocCount = tocFromHeadings.length > 0 ? h2Count : toc.length > 0 ? 1 : 0;
 
-const UTILITY_SLUG = 'spoofer-rust';
+const UTILITY_SLUG = 'the-isle-dma';
 const onUtilityPost = post.slug === UTILITY_SLUG;
 const utilityPost = getBlogPost(UTILITY_SLUG, locale);
 const otherReads: BlogPostFull[] = [];
 const usedRelated = new Set(relatedShort.map((item) => item.slug));
 const extraReads = [...related.slice(2), ...otherReads].filter((item) => !usedRelated.has(item.slug));
-const showUtilitySlot = !onUtilityPost && post.slug !== 'rust-ban-types';
+const showUtilitySlot = !onUtilityPost;
 const slotPosts: BlogPostFull[] = onUtilityPost
   ? extraReads.slice(0, 2)
   : showUtilitySlot && utilityPost

@@ -7,6 +7,8 @@ export interface ProductSlide {
   captionDesc: string;
   width?: number;
   height?: number;
+  /** Menu screenshots use contain; gameplay art uses cover (default). */
+  objectFit?: 'contain' | 'cover';
 }
 
 export interface ProductOverview {

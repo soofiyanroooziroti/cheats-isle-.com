@@ -24,7 +24,7 @@
     "check:links": "node scripts/check-i18n-links.mjs",
     "verify": "node scripts/verify-site.mjs",
     "qa": "npm run build:i18n-test && npm run check:seo && npm run verify",
-    "deploy:cf": "wrangler pages deploy dist --project-name=cheats-rust--org"
+    "deploy:cf": "wrangler pages deploy dist --project-name=cheatsisle-com"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",

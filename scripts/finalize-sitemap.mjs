@@ -37,7 +37,7 @@ function formatUrlset(xml) {
     .replace(/<\/priority>/g, '</priority>\n');
 }
 
-const CANONICAL_ORIGIN = 'https://cheatrust.org';
+const CANONICAL_ORIGIN = 'https://cheatsisle.com';
 
 function canonicalizeHosts(xml) {
   return xml.replace(/https?:\/\/(?:www\.)?cheatsfordeltaforce\.com/g, CANONICAL_ORIGIN);

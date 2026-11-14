@@ -1,9 +1,9 @@
 {
   "site": {
-    "name": "Rust Cheats",
-    "domain": "cheatrust.org",
-    "title": "Rust Cheats",
-    "description": "Rust cheats for Windows PC—compare the cheat loader, HWID spoofer, and rust unban tool on cheatrust.org.",
+    "name": "The Isle Cheats",
+    "domain": "cheatsisle.com",
+    "title": "The Isle Cheats & The Isle Evrima Cheats Store",
+    "description": "The Isle Cheats and The Isle Evrima Cheats for Windows PC—compare the loader, HWID spoofer, and unban tool on cheatsisle.com.",
     "discord": "https://discord.com/invite/2gMnnaPWq"
   },
   "nav": [
@@ -16,7 +16,7 @@
       "label": "Products"
     },
     {
-      "href": "/product/rust-cheat/#features",
+      "href": "/product/the-isle-cheat/#features",
       "label": "Features"
     },
     {
@@ -56,17 +56,17 @@
     "support": "Support"
   },
   "hero": {
-    "status": "Rust — modules online",
+    "status": "The Isle (Evrima) — modules online",
     "eyebrow": "Windows PC",
-    "titleLine1": "Rust Cheats",
-    "titleLine2": "Rust Cheats",
-    "subtitle": "Rust cheats for Windows PC with best rust cheats workflows—loader delivery, HWID spoofer, and rust unban tool, plus Discord support.",
+    "titleLine1": "The Isle Evrima Cheats",
+    "titleLine2": "The Isle Evrima Cheats",
+    "subtitle": "The Isle Evrima cheats for Windows PC—loader delivery, The Isle HWID Spoofer, and The Isle Unban Tool with Discord support on cheatsisle.com.",
     "ctaPrimary": "View products",
     "ctaDiscord": "Buy now",
     "modesLabel": "Modes",
     "modes": [
-      "Vanilla",
-      "Modded",
+      "Official Evrima",
+      "Herd test",
       "Monthly",
       "Lifetime"
     ],
@@ -85,56 +85,40 @@
       },
       {
         "label": "Support",
-        "strong": "24/7"
+        "strong": "Discord"
       }
     ]
   },
   "features": {
     "eyebrow": "Features",
-    "title": "Six menu groups on one Rust cheat license",
-    "subtitle": "Visual ESP, weapons, aimbot, misc, and config modules for Rust on Windows PC.",
+    "title": "Visual and Misc groups on one license",
+    "subtitle": "Player, animal, and world overlays plus misc HUD tools for The Isle (Evrima) on Windows PC.",
     "seeAllLabel": "See all features",
     "items": [
       {
-        "title": "Visual ESP Features",
-        "subtitle": "Players, scientists, animals, and ore overlays with colors and distance sliders."
+        "title": "Visual",
+        "subtitle": "Player ESP, NPC ESP, Animal ESP, Box, Snapline, Name, Distance, Corpse, Health, Stamina, Growth, Species, and more."
       },
       {
-        "title": "Visual ESP Features 2",
-        "subtitle": "Collectables, traps, stashes, dropped loot, and vehicle ESP with distance control."
-      },
-      {
-        "title": "Weapon Options",
-        "subtitle": "Instant bows, no recoil axes, spread controls, and peek keybinds."
-      },
-      {
-        "title": "Aimbot Options",
-        "subtitle": "Toggle aimbot, FOV circle, smoothing, custom bone, and aim key."
-      },
-      {
-        "title": "Misc Options",
-        "subtitle": "Movement aids, world lighting, flyhack, zoom, and FOV tweaks."
-      },
-      {
-        "title": "Config Options",
-        "subtitle": "Watermark, font and ESP size sliders, game width, and FPS caps."
+        "title": "Misc",
+        "subtitle": "Crosshair, Fullbright, FPS and resolution readouts, custom menu and panic keys, and Custom ESP Colors."
       }
     ]
   },
   "whyUs": {
     "eyebrow": "Why us",
-    "title": "Ranked tooling backed by patches—not promises",
-    "subtitle": "One cheat product, one HWID spoofer, and one UGC recovery workspace. The cheat and UGC are $35 monthly or $150 lifetime; the spoofer is $50 monthly or $150 lifetime. A ban is still possible under EasyAnti-Cheat.",
-    "usLabel": "Rust Cheats",
+    "title": "Evrima tooling backed by patches—not promises",
+    "subtitle": "One cheat product, one HWID spoofer, and one UGC recovery workspace. The cheat and UGC are $35 monthly or $150 lifetime; the spoofer is $50 monthly or $150 lifetime. A ban is still possible under Easy Anti-Cheat.",
+    "usLabel": "The Isle Cheats",
     "otherLabel": "Typical provider",
     "rows": [
       {
         "title": "Patch-day loader updates",
-        "desc": "Check cheatrust.org after a Rust or EAC update before you open the loader."
+        "desc": "Check cheatsisle.com after a The Isle or EAC update before you open the loader."
       },
       {
-        "title": "Separate aim sliders",
-        "desc": "Aim smooth, FOV, and bone choice are separate sliders. Change one at a time and save the config."
+        "title": "Separate Visual sliders",
+        "desc": "Max Distance, Species, and Growth toggles are separate rows. Change one at a time and save the config."
       },
       {
         "title": "Loader and config help",
@@ -146,7 +130,7 @@
       },
       {
         "title": "Saved configs",
-        "desc": "Save aimbot, ESP, weapon options, misc options, and config options instead of rebuilding them each launch."
+        "desc": "Save, ESP, Visual modules, misc options, and config options instead of rebuilding them each launch."
       },
       {
         "title": "HWID is its own product",
@@ -157,7 +141,7 @@
       {
         "value": "EAC",
         "title": "Check after a patch",
-        "desc": "Recheck the site after a Rust or EasyAnti-Cheat update before you launch."
+        "desc": "Recheck the site after a The Isle or Easy Anti-Cheat update before you launch."
       },
       {
         "value": "2",
@@ -167,15 +151,15 @@
       {
         "value": "3",
         "title": "Separate products",
-        "desc": "Rust Cheats, the HWID spoofer, and UGC recovery. Each one is its own key."
+        "desc": "The Isle Cheats, the HWID spoofer, and UGC recovery. Each one is its own key."
       }
     ]
   },
   "setup": {
     "eyebrow": "Setup guide",
-    "titleLead": "From checkout to ranked queue in just",
+    "titleLead": "From checkout to Evrima in",
     "titleHighlight": "three simple steps",
-    "intro": "Getting started is checkout, the portal loader, then a saved config. Check the site after an EasyAnti-Cheat update before you launch Rust.",
+    "intro": "Check the site after an Easy Anti-Cheat update before you launch The Isle.",
     "ctaPrimary": "View products",
     "ctaSecondary": "Setup FAQ",
     "ctaPrimaryHref": "/products/",
@@ -187,10 +171,6 @@
         {
           "icon": "instantDelivery",
           "label": "Instant delivery"
-        },
-        {
-          "icon": "support247",
-          "label": "24/7 support"
         },
         {
           "icon": "refresh",
@@ -207,19 +187,19 @@
       {
         "step": "Step 2",
         "title": "Launch & configure modules",
-        "desc": "Run the loader, then tune aimbot, ESP, weapon options, and misc options one slider at a time."
+        "desc": "Run the loader, then tune, ESP, Visual modules, and misc options one slider at a time."
       },
       {
         "step": "Step 3",
         "title": "Check status, then launch",
-        "desc": "Confirm the site is current for this client, then open Rust with the config you saved."
+        "desc": "Confirm the site is current for this client, then open The Isle with the config you saved."
       }
     ]
   },
   "compatibility": {
     "eyebrow": "Platform support",
     "title": "Runs on your rig.",
-    "subtitle": "Check the site after a Rust or EAC update before you launch.",
+    "subtitle": "Check the site after a The Isle or EAC update before you launch.",
     "items": [
       "Windows 10 & 11",
       "Intel or AMD",
@@ -233,35 +213,35 @@
   },
   "cheats": {
     "eyebrow": "Game cheat",
-    "title": "Rust Cheats",
-    "subtitle": "Rust cheat loader with overlays and world tools for Windows PC.",
+    "title": "The Isle Cheats",
+    "subtitle": "The Isle (Evrima) loader with Visual and Misc modules for Windows PC.",
     "viewAll": "View details",
     "explore": "Explore",
     "items": [
       {
         "badge": "Active",
-        "tier": "Full suite",
-        "name": "Rust",
-        "title": "Rust Cheats",
-        "desc": "Rust cheat for Windows PC—Visual ESP, weapon, aimbot, misc, and config modules.",
+        "tier": "ESP & visuals",
+        "name": "The Isle",
+        "title": "The Isle Cheats",
+        "desc": "The Isle Cheats Evrima loader—Visual ESP for players, dinosaurs, and forage plus Misc HUD tools.",
         "features": [
-          "Box ESP · Skeleton ESP · Name ESP",
-          "No Recoil · No Sway · No Spread",
-          "Toggle Aimbot · FOV Circle",
-          "Stone ESP · Shotgun Traps ESP",
-          "Config Options · Font Slider"
+          "Player ESP · Animal ESP · Box",
+          "Species · Growth · Stamina",
+          "Fruit · Water · Max Distance",
+          "Custom Menu Key · Panic Key",
+          "Custom ESP Colors · Crosshair"
         ],
-        "more": 110,
-        "href": "/product/rust-cheat/",
+        "href": "/product/the-isle-cheat/",
         "variant": "popular"
       }
     ]
   },
   "products": {
     "eyebrow": "Products",
-    "catalogHeading": "Plans for the Rust menu, HWID spoofer and unban tool",
-    "title": "Rust Cheats plans for loader, spoofer, and unban tool",
-    "subtitle": "Rust cheat loader, HWID spoofer, and rust unban tool for Windows PC. The cheat and unban tool are $35 monthly or $150 lifetime; the spoofer is $50 monthly or $150 lifetime. Each is a separate checkout.",
+    "addOnsHeading": "Add-ons",
+    "catalogHeading": "Plans for the Evrima menu, HWID spoofer and unban tool",
+    "title": "The Isle Cheats plans for loader, spoofer, and unban tool",
+    "subtitle": "The Isle Cheats Evrima loader, The Isle HWID Spoofer, and The Isle Unban Tool for Windows PC. Loader and unban tool are $35 monthly or $150 lifetime; spoofer is $50 monthly or $150 lifetime. Each checkout is separate.",
     "viewAll": "View details",
     "get": "Buy now",
     "explore": "Explore",
@@ -269,31 +249,31 @@
       {
         "badge": "Active",
         "category": "HWID spoofer",
-        "title": "Rust HWID spoofer",
+        "title": "The Isle HWID Spoofer",
         "subtitle": "Hardware ID recovery",
-        "desc": "Rust HWID spoofer with cleaner—rotate disk, MAC, and GPU IDs after hardware flags. $50 monthly or $150 lifetime.",
+        "desc": "The Isle HWID Spoofer with cleaner—rotate disk, MAC, and GPU IDs after hardware flags. $50 monthly or $150 lifetime.",
         "features": [
           "Hardware spoofer + cleaner",
           "Compatibility scan",
           "Verification steps",
           "Portal workflow"
         ],
-        "more": 4,
         "href": "/product/spoofer/"
       },
       {
         "badge": "Active",
-        "category": "Rust unban tool",
-        "title": "Rust unban tool",
+        "category": "Unban tool",
+        "title": "The Isle Unban Tool",
         "subtitle": "Appeals & recovery",
-        "desc": "Rust unban tool workspace—custom appeal workflows, templates, and restriction tracking.",
+        "desc": "The Isle Unban Tool workspace—custom appeal workflows, templates, and restriction tracking.",
         "features": [
-          "Custom rust unban workflows",
-          "Multi-platform profiles",
-          "Template library",
-          "Status dashboard"
+          "Windows 10 or 11 (64-bit) client",
+          "The Isle Evrima account appeal workspace",
+          "Evidence checklists for restriction cases",
+          "Automation for repetitive steps",
+          "Restriction tracking dashboard",
+          "Secure portal delivery"
         ],
-        "more": 4,
         "href": "/product/ugc/"
       }
     ]
@@ -301,8 +281,8 @@
   "blog": {
     "eyebrow": "Blog",
     "title": "Guides and updates",
-    "subtitle": "Setup notes, aimbot and ESP guides, loot explainers, and pricing answers for Rust on Windows PC.",
-    "latestTitle": "Rust guides for aim, ESP, loot and setup",
+    "subtitle": "Setup notes, and ESP guides, loot explainers, and pricing answers for The Isle on Windows PC.",
+    "latestTitle": "The Isle guides for aim, ESP, loot and setup",
     "latestSubtitle": "Filter by topic or sort to find setup guides, feature deep-dives, and patch-day notes.",
     "filterAll": "All articles",
     "sortLabel": "Sort by",
@@ -349,27 +329,27 @@
       },
       {
         "num": "03",
-        "label": "Loot",
-        "title": "Price filter first",
-        "desc": "Item name, rarity, price, corpses, and computers, with a minimum price so junk drops off."
+        "label": "Forage",
+        "title": "Fruit, water, and distance",
+        "desc": "Fruit, Water, and Max Distance caps keep jungle reads clean without turning off Animal ESP."
       },
       {
         "num": "04",
-        "label": "Weapon",
-        "title": "Recoil, spread, and sway",
-        "desc": "Weapon options cover recoil, spread, sway, and melee reach. They stay separate from ESP labels."
+        "label": "Misc",
+        "title": "HUD and keys",
+        "desc": "Crosshair, Fullbright, Show FPS, Custom Menu Key, and Custom Panic Key live in the Misc group."
       },
       {
         "num": "05",
-        "label": "Camera",
-        "title": "View width, not aim width",
-        "desc": "Camera FOV, third person, arm and weapon scale, and combat-mode hides."
+        "label": "Colors",
+        "title": "Custom ESP Colors",
+        "desc": "Per-entity color pickers help separate herds, corpses, and players on busy servers."
       },
       {
         "num": "06",
         "label": "Config",
         "title": "Save the layout",
-        "desc": "Store the sliders you tested so the next launch does not start from zero."
+        "desc": "Store the toggles you tested so the next Evrima session does not start from zero."
       }
     ]
   },
@@ -378,7 +358,7 @@
     "badge": "4 easy steps",
     "titleBefore": "From status check to",
     "titleHighlight": "saved profile.",
-    "subtitle": "A straight path from a status check to a saved Rust config.",
+    "subtitle": "A straight path from a status check to a saved The Isle config.",
     "ctaLabel": "View products",
     "ctaHref": "/products/",
     "ctaSecondary": "Setup FAQ",
@@ -388,13 +368,13 @@
         "num": "01",
         "phase": "Before purchase",
         "title": "Check EAC status",
-        "desc": "Read cheatrust.org after a client or EasyAnti-Cheat update before you buy or launch."
+        "desc": "Read cheatsisle.com after a client or Easy Anti-Cheat update before you buy or launch."
       },
       {
         "num": "02",
         "phase": "Checkout",
         "title": "Choose the product",
-        "desc": "Rust Cheats and UGC are $35 monthly. The HWID spoofer is $50 monthly. Lifetime is $150 on each product. They are separate keys."
+        "desc": "The Isle Cheats and UGC are $35 monthly. The HWID spoofer is $50 monthly. Lifetime is $150 on each product. They are separate keys."
       },
       {
         "num": "03",
@@ -406,13 +386,13 @@
         "num": "04",
         "phase": "In-game",
         "title": "Save your profile",
-        "desc": "When the aim cone and the ESP labels feel right, save the config."
+        "desc": "When the ESP layout and Misc HUD readouts feel right, save the config."
       }
     ]
   },
   "fieldNotes": {
     "eyebrow": "Field notes",
-    "title": "Built for Rust on Windows PC.",
+    "title": "Built for The Isle on Windows PC.",
     "items": [
       {
         "num": "01",
@@ -422,7 +402,7 @@
       {
         "num": "02",
         "title": "One slider at a time",
-        "desc": "Change FOV, smooth, or distance alone so you know which setting caused the pull or the clutter."
+        "desc": "Change Max Distance, Species, or Misc toggles alone so you know which setting caused the clutter."
       },
       {
         "num": "03",
@@ -433,20 +413,20 @@
   },
   "support": {
     "eyebrow": "Support",
-    "title": "Rust support: loader, checkout, and HWID PC",
-    "subtitle": "Support for the loader, checkout, and HWID spoofer. Include your order email and the exact loader text.",
+    "title": "The Isle support: loader, checkout, and HWID PC",
+    "subtitle": "Support for the loader, checkout, and HWID spoofer. Include your order ID from checkout and the exact loader text.",
     "channels": [
       {
         "icon": "users",
         "title": "Chat before checkout",
         "desc": "Ask about the cheat, the spoofer, or UGC before you pay.",
         "linkLabel": "Start checkout",
-        "href": "/go/rust/"
+        "href": "/go/the-isle-cheat/"
       },
       {
         "icon": "messageCircle",
         "title": "Community forum",
-        "desc": "Setup, aim, ESP, and plan questions with marked developer replies.",
+        "desc": "Evrima visuals, animal and water markers, status, and which product you need. Developer replies stay on the thread.",
         "linkLabel": "Open the forum",
         "href": "/forum/"
       },
@@ -460,7 +440,7 @@
       {
         "icon": "clock",
         "title": "Live operators",
-        "desc": "Discord engineers on shift 24/7.",
+        "desc": "Discord support for setup and checkout.",
         "linkLabel": "Open contact page",
         "href": "/support/"
       }
@@ -468,8 +448,8 @@
     "ticketTitle": "Include in your ticket",
     "ticketItems": [
       {
-        "title": "Order email",
-        "desc": "The address used at checkout on cheatrust.org."
+        "title": "Order ID",
+        "desc": "The ID shown on your Zadeyo receipt after checkout."
       },
       {
         "title": "Platform",
@@ -485,219 +465,6 @@
     "eyebrow": "FAQ",
     "title": "Straight answers before checkout.",
     "subtitle": "Compatibility, bans and access—no vague promises.",
-    "items": [
-      {
-        "id": "status",
-        "topic": "setup",
-        "icon": "faqStatus",
-        "q": "Where do I check if the loader is current?",
-        "a": "Open the status page. Green means it is updated and can be used. Red means it is not updated and should not be used. Blue means developers are still updating it."
-      },
-      {
-        "id": "after-buy",
-        "topic": "setup",
-        "icon": "faqAfterBuy",
-        "q": "What happens after I buy?",
-        "a": "Checkout opens the portal with the loader for the product you paid for. Save a config after you tune it. HVCI, core isolation, TPM, and secure boot stay on."
-      },
-      {
-        "id": "ban-risk",
-        "topic": "safety",
-        "icon": "faqBanRisk",
-        "q": "Can I get banned?",
-        "a": "Yes. EasyAnti-Cheat can act on the account. Nothing on this site is a guarantee that a session stays clean."
-      },
-      {
-        "id": "hwid-ban-risk",
-        "topic": "safety",
-        "icon": "faqBanRisk",
-        "q": "What is an HWID flag, and does the cheat key fix it?",
-        "a": "A hardware flag follows the PC. New accounts can fail on that machine and work on another. That is the <a href=\"/product/spoofer/\">HWID Spoofer</a>, sold separately. It does not undo an account-only restriction, and lifetime on <a href=\"/product/rust-cheat/\">Rust Cheats</a> does not include it."
-      },
-      {
-        "id": "platforms",
-        "topic": "setup",
-        "icon": "faqPlatforms",
-        "q": "Which PCs are supported?",
-        "a": "Windows 10 or 11 on Intel or AMD, with HVCI, core isolation, TPM, and secure boot on. macOS and Linux are not supported."
-      },
-      {
-        "id": "license-move",
-        "topic": "products",
-        "icon": "faqLicenseMove",
-        "q": "Can I move a key to another PC?",
-        "a": "Open support with the order email. A machine that fails new accounts is an HWID Spoofer purchase, not a free move of the cheat key."
-      },
-      {
-        "id": "products-page",
-        "topic": "products",
-        "icon": "faqProductsPage",
-        "q": "What is for sale?",
-        "a": "<a href=\"/product/rust-cheat/\">Rust Cheats</a> and <a href=\"/product/ugc/\">UGC Account recovery</a> are $35 for 30 days or $150 lifetime. The <a href=\"/product/spoofer/\">HWID Spoofer</a> is $50 for 30 days or $150 lifetime. All three are listed on the <a href=\"/products/\">products page</a> as separate checkouts."
-      },
-      {
-        "id": "plans-same-price",
-        "topic": "plans",
-        "icon": "faqComparePlans",
-        "q": "Does $150 lifetime include the spoofer?",
-        "a": "No. Lifetime on Rust Cheats is that product only. The HWID spoofer and UGC recovery are separate keys. The spoofer is $50 monthly or $150 lifetime; the cheat and UGC are $35 monthly or $150 lifetime. A monthly start does not promise a credit toward lifetime.",
-        "scopes": [
-          "rust-cheat",
-          "hwid-spoofer",
-          "ugc"
-        ]
-      },
-      {
-        "id": "aim-vs-camera",
-        "topic": "esp",
-        "icon": "faqWhatIsEsp",
-        "q": "Is camera FOV the same slider as aim FOV?",
-        "a": "No. Camera FOV changes how wide the view is. Aim FOV is only the cone the assist searches. Set the camera first, then retune aim FOV.",
-        "scopes": [
-          "rust-cheat"
-        ]
-      },
-      {
-        "id": "esp-clutter",
-        "topic": "esp",
-        "icon": "faqWhatIsEsp",
-        "q": "Why does player ESP cover the fight?",
-        "a": "Start with box or skeleton, health, and distance. Add gear levels only if you read them. A max distance drops far operators. Weapon options are a separate menu, not a replacement for those labels.",
-        "scopes": [
-          "rust-cheat"
-        ]
-      },
-      {
-        "id": "not-dma",
-        "topic": "scripts",
-        "icon": "faqExternalLoader",
-        "q": "Is this a DMA card?",
-        "a": "No. Rust Cheats is a Windows loader from checkout. A DMA device is a different product and is not what this key delivers. Do not run a file that arrived from a search result.",
-        "scopes": [
-          "rust-cheat"
-        ]
-      },
-      {
-        "id": "ugc-scope",
-        "topic": "products",
-        "icon": "faqProductsPage",
-        "q": "What does UGC Account recovery do?",
-        "a": "<a href=\"/product/ugc/\">UGC Account recovery</a> is an appeal workspace: templates, evidence lists, and follow-up. It is not a guaranteed unban, and it is not the HWID spoofer.",
-        "scopes": [
-          "ugc"
-        ]
-      },
-      {
-        "id": "spoofer-scope",
-        "topic": "products",
-        "icon": "faqProductsPage",
-        "q": "When is the HWID spoofer the right buy?",
-        "a": "Use <a href=\"/product/spoofer/\">HWID Spoofer</a> when a new account fails on one PC and works on another. It does not fix an account-only restriction. Buy <a href=\"/product/ugc/\">UGC Account recovery</a> for that case instead.",
-        "scopes": [
-          "hwid-spoofer"
-        ]
-      },
-      {
-        "id": "stickiness-vs-smooth",
-        "topic": "scripts",
-        "icon": "faqExternalLoader",
-        "q": "Is stickiness the same control as smooth?",
-        "a": "No. Smooth slows how fast the crosshair closes the gap. Stickiness holds the assist on the current operator a little longer when they strafe or leave the edge of the cone. Speed is a third slider: how fast the assist moves once a target is already inside that cone. Change one, then save the config.",
-        "scopes": [
-          "rust-cheat"
-        ]
-      },
-      {
-        "id": "visible-check",
-        "topic": "scripts",
-        "icon": "faqWhatIsEsp",
-        "q": "Does visible check stop labels through cover?",
-        "a": "No. Visible check only gates aim assist: it engages when the operator is in line of sight, not through solid cover. Skeleton and box ESP are separate toggles and can still draw when that check is on.",
-        "scopes": [
-          "rust-cheat"
-        ]
-      },
-      {
-        "id": "ignore-knocked",
-        "topic": "esp",
-        "icon": "faqWhatIsEsp",
-        "q": "Why does the assist stay on a downed operator?",
-        "a": "Turn on Ignore Knocked so aim assist skips operators who are already down. Show Knocked is only a visual switch that keeps those bodies on the overlay. One does not turn the other off.",
-        "scopes": [
-          "rust-cheat"
-        ]
-      },
-      {
-        "id": "bone-and-filter",
-        "topic": "scripts",
-        "icon": "faqExternalLoader",
-        "q": "What does bone selection do if the aim filter is already on?",
-        "a": "The aimbot filter limits which models the assist may pick. Bone selection then chooses Closest, Head, Neck, or Chest as the preferred hitbox on those models. Set the filter first, then the bone.",
-        "scopes": [
-          "rust-cheat"
-        ]
-      },
-      {
-        "id": "controller-binds",
-        "topic": "setup",
-        "icon": "faqPlatforms",
-        "q": "Can I put aim assist on a controller without a remap tool?",
-        "a": "Yes. This build has two aim keys, and one of them can be a native controller bind. You do not install a separate remap app for that second key.",
-        "scopes": [
-          "rust-cheat"
-        ]
-      },
-      {
-        "id": "squad-read",
-        "topic": "esp",
-        "icon": "faqWhatIsEsp",
-        "q": "How do I tell squads apart without more boxes?",
-        "a": "Use team number, hero name, and view direction. A head circle marks the head hitbox. Snaplines run from your view to a player. Leave helmet, armor, and chest-bag levels off until you actually read them.",
-        "scopes": [
-          "rust-cheat"
-        ]
-      },
-      {
-        "id": "loot-price-floor",
-        "topic": "esp",
-        "icon": "faqWhatIsEsp",
-        "q": "Loot names still cover every container. What do I cut first?",
-        "a": "Set a minimum price so cheap items drop off. Keep player corpses, AI corpses, and computers as their own markers instead of turning the whole loot group off. Color, size, transparency, and brightness sit on the player visual group, not on this price floor.",
-        "scopes": [
-          "rust-cheat"
-        ]
-      },
-      {
-        "id": "scale-and-crosshair",
-        "topic": "scripts",
-        "icon": "faqExternalLoader",
-        "q": "Do arm scale and weapon scale move the same model?",
-        "a": "No. Arms scale offset moves the arms on X, Y, and Z. Weapon scale offset moves the gun on its own axes. Enable Crosshair only draws a fixed center mark. Third person is a separate hotkey and does not change either scale.",
-        "scopes": [
-          "rust-cheat"
-        ]
-      },
-      {
-        "id": "combat-mode",
-        "topic": "scripts",
-        "icon": "faqExternalLoader",
-        "q": "Does combat mode turn aim assist off?",
-        "a": "No. Combat mode hides the markers you pick: player, AI, item, dead container, or computer. Aimbot and misc options stay on until you toggle those groups yourself.",
-        "scopes": [
-          "rust-cheat"
-        ]
-      },
-      {
-        "id": "encryption-bypass",
-        "topic": "setup",
-        "icon": "faqStatus",
-        "q": "What is the encryption bypass toggle?",
-        "a": "It is a Misc menu option in this build. It is not a second product and it is not a hardware card. Leave it off unless the current note on cheatrust.org says to use it for this client.",
-        "scopes": [
-          "rust-cheat"
-        ]
-      }
-    ],
     "filterTopics": {
       "all": "All",
       "plans": "Plans",
@@ -710,7 +477,7 @@
     }
   },
   "footer": {
-    "tagline": "Rust Cheats, HWID spoofer, and rust unban tool for Windows PC. cheatrust.org",
+    "tagline": "The Isle Cheats, HWID spoofer, and The Isle Unban Tool for Windows PC. cheatsisle.com",
     "explore": "Explore",
     "exploreLinks": [
       {
@@ -720,7 +487,7 @@
         "scrollTarget": "features"
       },
       {
-        "href": "/product/rust-cheat/",
+        "href": "/product/the-isle-cheat/",
         "label": "Loader feature page",
         "ariaLabel": "Loader feature page"
       },
@@ -728,11 +495,6 @@
         "href": "/products/",
         "label": "All products",
         "ariaLabel": "Products"
-      },
-      {
-        "href": "/blog/",
-        "label": "Read patch guides",
-        "ariaLabel": "Blog"
       },
       {
         "href": "/faq/",
@@ -763,13 +525,13 @@
   },
   "legalPages": {
     "about": {
-      "title": "About this Rust store",
-      "description": "cheatrust.org sells Rust Cheats, an HWID spoofer, and UGC account recovery for Windows PC, with setup notes and honest ban risk.",
+      "title": "About this The Isle store",
+      "description": "cheatsisle.com sells The Isle Cheats, an HWID spoofer, and UGC account recovery for Windows PC, with setup notes and honest ban risk.",
       "sections": [
         {
           "heading": "Who we are",
           "paragraphs": [
-            "cheatrust.org is a Windows PC store for Rust Cheats, an HWID spoofer, and UGC account recovery. The cheat is one product: aimbot, ESP, weapon options, misc options, and config options. It is not a ladder of Lite, Pro, and Elite tiers, and it is not a DMA card.",
+            "cheatsisle.com is a Windows PC store for The Isle Cheats, The Isle HWID Spoofer, and The Isle Unban Tool. The cheat is one product with Visual and Misc modules. It is not a ladder of Lite, Pro, and Elite tiers, and it is not a DMA card.",
             "The cheat and UGC are $35 for 30 days or $150 lifetime. The HWID spoofer is $50 for 30 days or $150 lifetime. A lifetime key on the cheat does not include the spoofer or the recovery workspace. Starting on a month does not promise a credit toward lifetime.",
             "Product names on this site identify what we sell. They are not a claim that the game publisher endorses the software. Delivery is a portal download for Windows 10 or 11. You keep HVCI, core isolation, TPM, and secure boot on, then open the loader only when the site still matches the current client."
           ]
@@ -777,34 +539,34 @@
         {
           "heading": "What we publish",
           "paragraphs": [
-            "The [Rust Cheats](/product/rust-cheat/) page lists the menu names and the Windows requirements: Windows 10 or 11, Intel or AMD, with HVCI, core isolation, TPM, and secure boot left on. The [products page](/products/) is where you compare the cheat, the [HWID Spoofer](/product/spoofer/), and [UGC Account recovery](/product/ugc/).",
-            "Guides on the [blog](/blog/) explain aim FOV versus camera FOV, how loot filters work, and why a hardware flag is a different buy from an account appeal. The [forum](/forum/) is for those same questions, with developer replies marked on the thread. Read the [terms](/terms/) before checkout. Sales are final, including bans.",
-            "EasyAnti-Cheat can still act on an account. Nothing here is a guarantee that a session stays clean after the next patch. Check this site after a client update before you open the loader. If the page is not current for that build, leave the software closed.",
-            "Status notes on the homepage describe whether the published build still matches the client. They are not a promise that EasyAnti-Cheat will ignore the software. If you are unsure, leave the loader closed and read the matching guide on the blog before you queue again."
+            "The [The Isle Cheats](/product/the-isle-cheat/) page lists the menu names and the Windows requirements: Windows 10 or 11, Intel or AMD, with HVCI, core isolation, TPM, and secure boot left on. The [products page](/products/) is where you compare the cheat, the [The Isle HWID Spoofer](/product/spoofer/), and [The Isle Unban Tool](/product/ugc/).",
+            "The [forum](/forum/) covers ESP distance tuning, forage markers, and why a hardware flag is a different buy from an account appeal, with developer replies marked on the thread. Read the [terms](/terms/) before checkout. Sales are final, including bans.",
+            "Easy Anti-Cheat can still act on an account. Nothing here is a guarantee that a session stays clean after the next patch. Check this site after a client update before you open the loader. If the page is not current for that build, leave the software closed.",
+            "Status notes on the homepage describe whether the published build still matches the client. They are not a promise that Easy Anti-Cheat will ignore the software. If you are unsure, leave the loader closed and read the matching guide on the blog before you launch again."
           ]
         },
         {
           "heading": "Support",
           "paragraphs": [
-            "Loader errors, a key that will not move, and checkout questions go through the [support page](/support/). Include the order email, Windows version, and the exact loader text. Do not turn HVCI, core isolation, TPM, or secure boot off because a chat message from another game said to."
+            "Loader errors, a key that will not move, and checkout questions go through the [support page](/support/). Include your order ID from checkout, Windows version, and the exact loader text. Do not turn HVCI, core isolation, TPM, or secure boot off because a chat message from another game said to."
           ]
         }
       ]
     },
     "privacy": {
       "title": "Privacy Policy",
-      "description": "How cheatrust.org handles analytics, cookies, and contact data.",
+      "description": "How cheatsisle.com handles analytics, cookies, and contact data.",
       "sections": [
         {
           "heading": "Information we collect",
           "paragraphs": [
-            "We may collect standard web analytics such as page views, device type, browser, and approximate region through Google Analytics when enabled. Checkout and license delivery happen on external checkout pages. We do not store payment card data on cheatrust.org."
+            "We may collect standard web analytics such as page views, device type, browser, and approximate region through Google Analytics when enabled. Checkout and license delivery happen on external checkout pages. We do not store payment card data on cheatsisle.com."
           ]
         },
         {
           "heading": "How we use data",
           "paragraphs": [
-            "Analytics help us understand which guides and product pages are useful so we can improve content and fix broken links. Support tickets may retain the email address and message content you provide until the issue is resolved."
+            "Analytics help us understand which guides and product pages are useful so we can improve content and fix broken links. Support tickets may retain the Discord handle and message content you provide until the issue is resolved."
           ]
         },
         {
@@ -823,26 +585,26 @@
     },
     "terms": {
       "title": "Terms & Conditions",
-      "description": "Purchase, license, refund, and use terms for products sold on cheatrust.org.",
+      "description": "Purchase, license, refund, and use terms for products sold on cheatsisle.com.",
       "sections": [
         {
           "heading": "Agreement",
           "paragraphs": [
-            "Last updated: October 2026. By using cheatrust.org or completing checkout for any product listed here, you agree to these Terms & Conditions and our Privacy Policy."
+            "Last updated: October 2026. By using cheatsisle.com or completing checkout for any product listed here, you agree to these Terms & Conditions and our Privacy Policy."
           ]
         },
         {
           "heading": "What you purchase",
           "paragraphs": [
-            "We sell Rust Cheats, an HWID spoofer, and UGC account recovery. The cheat and UGC are $35 for 30 days or $150 lifetime; the HWID spoofer is $50 for 30 days or $150 lifetime. Each license is delivered through a portal and loader for Windows PC.",
-            "Feature lists on each product page describe what is included at the time of purchase. Modules can change when Rust or EasyAnti-Cheat updates. A lifetime cheat key does not include the spoofer or UGC."
+            "We sell The Isle Cheats, an HWID spoofer, and UGC account recovery. The cheat and UGC are $35 for 30 days or $150 lifetime; the HWID spoofer is $50 for 30 days or $150 lifetime. Each license is delivered through a portal and loader for Windows PC.",
+            "Feature lists on each product page describe what is included at the time of purchase. Modules can change when The Isle or Easy Anti-Cheat updates. A lifetime cheat key does not include the spoofer or UGC."
           ]
         },
         {
           "heading": "Checkout and delivery",
           "paragraphs": [
-            "Payment and license delivery run on external checkout pages. cheatrust.org does not process or store payment card numbers.",
-            "After purchase, use the portal from your order to download the current loader before you launch Rust. Leave HVCI, core isolation, TPM, and secure boot on."
+            "Payment and license delivery run on external checkout pages. cheatsisle.com does not process or store payment card numbers.",
+            "After purchase, use the portal from your order to download the current loader before you launch The Isle. Leave HVCI, core isolation, TPM, and secure boot on."
           ]
         },
         {
@@ -854,16 +616,16 @@
         {
           "heading": "Refunds and purchases",
           "paragraphs": [
-            "All sales are final once checkout completes. We do not refund change-of-mind purchases, account bans, EasyAnti-Cheat penalties, or issues caused by ignoring the setup notes or launching while the site is not current for that patch.",
-            "If the product does not work as described on a supported setup—Windows 10 or 11 with HVCI, core isolation, TPM, and secure boot on, and the current loader from the portal—contact us through the Support page. Include your order email, Windows version, and the exact loader text.",
+            "All sales are final once checkout completes. We do not refund change-of-mind purchases, account bans, Easy Anti-Cheat penalties, or issues caused by ignoring the setup notes or launching while the site is not current for that patch.",
+            "If the product does not work as described on a supported setup—Windows 10 or 11 with HVCI, core isolation, TPM, and secure boot on, and the current loader from the portal—contact us through the Support page. Include your order ID from checkout Windows version, and the exact loader text.",
             "We may, at our discretion, offer a fix, replacement access, or partial/full refund when we confirm a fault on our side. We are not obligated to approve every request."
           ]
         },
         {
           "heading": "Availability and risk",
           "paragraphs": [
-            "Third-party tools for Rust can conflict with game updates and EasyAnti-Cheat. You use this software at your own risk, including possible account action.",
-            "Check the homepage status banner before every session. Do not queue ranked while modules are offline or misaligned after a patch."
+            "Third-party tools for The Isle can conflict with game updates and Easy Anti-Cheat. You use this software at your own risk, including possible account action.",
+            "Check the homepage status banner before every session. Do not launch The Isle while modules are offline or misaligned after a patch."
           ]
         },
         {
@@ -881,17 +643,17 @@
       ]
     },
     "support": {
-      "title": "Rust support",
-      "description": "Loader, HWID spoofer, UGC, and checkout help for cheatrust.org."
+      "title": "The Isle support",
+      "description": "Loader, HWID spoofer, UGC, and checkout help for cheatsisle.com."
     }
   },
   "ui": {
     "skipLink": "Skip to main content",
     "browseCheats": "Try Now",
     "browseCheatsMobile": "Start checkout",
-    "homeAria": "Rust Cheats home",
+    "homeAria": "The Isle Cheats home",
     "checkoutAria": "Start checkout",
-    "discordAria": "Buy Rust Cheats",
+    "discordAria": "Buy The Isle Cheats",
     "menuOpen": "Open menu",
     "menuClose": "Close menu",
     "themeLight": "Switch to light mode",
@@ -916,8 +678,8 @@
     "badgeActive": "Active",
     "cards": {
       "cheats": {
-        "title": "Rust Cheats",
-        "desc": "Aimbot, ESP, weapon options, and misc options for Windows PC."
+        "title": "The Isle Cheats",
+        "desc": ", ESP, Visual modules, and misc options for Windows PC."
       },
       "spoofer": {
         "title": "HWID Spoofer",
@@ -933,7 +695,7 @@
       },
       "features": {
         "title": "Features",
-        "desc": "Aimbot, ESP, weapon options, misc options, and config options."
+        "desc": ", ESP, Visual modules, misc options, and config options."
       },
       "status": {
         "title": "Status",
@@ -961,13 +723,14 @@
     "checkout": "Checkout",
     "purchaseOption": "Purchase option",
     "selectSubscription": "Select subscription",
-    "bestValue": "Best value",
+    "recommended": "Recommended",
+    "bestValue": "Recommended",
     "savePrefix": "Save",
     "total": "Total",
     "buyNow": "Buy now",
     "oneMonth": "1 Month",
     "lifetime": "Lifetime",
-    "mostPopular": "Most Popular",
+    "mostPopular": "Recommended",
     "plusMore": "+N more",
     "monthlySuffix": " monthly",
     "lifetimeSuffix": " lifetime",
@@ -978,7 +741,7 @@
     "code": "404",
     "title": "Page not found",
     "description": "That URL does not exist or may have moved. Head back to the homepage or browse the products.",
-    "metaDescription": "The page you requested could not be found on cheatrust.org.",
+    "metaDescription": "The page you requested could not be found on cheatsisle.com.",
     "metaTitleSuffix": "Page not found",
     "backHome": "Back to home",
     "viewProducts": "View products",
@@ -986,8 +749,8 @@
   },
   "status": {
     "eyebrow": "Patch notes",
-    "title": "Rust module status",
-    "subtitle": "Check after every EasyAnti-Cheat or client update before you launch.",
+    "title": "The Isle module status",
+    "subtitle": "Check after every Easy Anti-Cheat or client update before you launch.",
     "breadcrumb": "Status",
     "aceReminderLabel": "EAC reminder",
     "recentTitle": "Recent updates",
@@ -997,8 +760,8 @@
   },
   "forum": {
     "eyebrow": "Community",
-    "title": "Forum: Rust community setup and plans",
-    "subtitle": "This forum covers setup, aim, ESP, and plan questions. Developer replies are marked on each thread.",
+    "title": "Forum: The Isle community setup and plans",
+    "subtitle": "This forum covers Evrima visuals, animal and water markers, status, and which product you need. Developer replies are marked on each thread.",
     "breadcrumb": "Forum",
     "postsAria": "Community posts",
     "sortAria": "Post sorting",
@@ -1031,8 +794,8 @@
     "noRepliesYet": "No replies yet",
     "previous": "Previous",
     "next": "Next",
-    "sidebarAboutTitle": "Forum: Rust community",
-    "sidebarAboutCopy": "Questions about the cheat, the HWID spoofer, and UGC recovery. Developer replies stay on the thread.",
+    "sidebarAboutTitle": "Forum: The Isle community",
+    "sidebarAboutCopy": "Questions about Evrima visuals, animal and water markers, status, the cheat, the HWID spoofer, and UGC recovery. Developer replies stay on the thread.",
     "sidebarTopics": "topics",
     "sidebarExploreGuides": "Explore all guides",
     "sidebarCommunities": "Communities",
@@ -1082,8 +845,8 @@
     "eyebrow": "Help center",
     "title": "FAQ: Plans, Setup and EAC Risk Before You Buy",
     "subtitle": "This FAQ covers plans, setup, and EAC risk before checkout, including the loader, spoofer, and account tool.",
-    "schemaName": "FAQ — Rust Cheats & Products",
-    "schemaDescription": "Answers about Rust Cheats, the HWID spoofer, UGC recovery, EAC risk, and checkout on cheatrust.org."
+    "schemaName": "FAQ — The Isle Cheats & Products",
+    "schemaDescription": "Answers about The Isle Cheats, the HWID spoofer, UGC recovery, EAC risk, and checkout on cheatsisle.com."
   },
   "siteFaqSection": {
     "allTopicsEyebrow": "All topics",
@@ -1096,7 +859,8 @@
   "catalog": {
     "viewDetails": "View details",
     "buyNow": "Buy now",
-    "mostPopular": "Most Popular",
+    "recommended": "Recommended",
+    "mostPopular": "Recommended",
     "popular": "Popular",
     "plusMore": "+{count} more",
     "monthlySuffix": " monthly",
@@ -1136,20 +900,31 @@
     "relatedGuides": "Related guides",
     "ourProducts": "Our products",
     "allArticles": "All articles",
-    "productCheats": "Rust Cheats",
+    "productCheats": "The Isle Cheats",
     "allProducts": "All products",
     "hwidSpoofer": "HWID Spoofer",
     "ugcRecovery": "UGC Account recovery",
     "tocAria": "Table of contents",
     "tocFallbackLabel": "Start of article",
     "quickFactsTitle": "Quick facts",
-    "quickFactsAntiCheat": "EasyAnti-Cheat (EAC)",
+    "quickFactsAntiCheat": "Easy Anti-Cheat (EAC)",
     "quickFactsPlatform": "Windows PC",
     "quickFactsPlans": "Plans $35 / $150",
-    "quickFactsSupport": "24/7 Discord support",
+    "quickFactsSupport": "Discord support",
     "quickFactsCheckStatus": "Check status",
-    "quickFactsViewProduct": "View Rust cheat",
+    "quickFactsViewProduct": "View the isle cheats evrima",
     "utilityGuides": "HWID spoofer guides",
     "moreGuides": "More guides"
+  },
+  "statusPage": {
+    "h1": "The Isle Cheats Status",
+    "intro": "Check this page before you launch The Isle after any Evrima patch or Easy Anti-Cheat update. The badge shows whether the current build is ready, updating or paused.",
+    "buildTitle": "Current Evrima build",
+    "requirementsTitle": "Requirements",
+    "patchesTitle": "Recent game patches",
+    "patchesSource": "Source: The Isle Evrima Steam announcements.",
+    "cheatUpdatesTitle": "Cheat updates",
+    "banRiskTitle": "Ban risk",
+    "buyLabel": "Buy The Isle Cheats"
   }
 }

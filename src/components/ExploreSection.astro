@@ -28,14 +28,14 @@ type ExploreCard = {
   product?: boolean;
 };
 
-const rustCheatFeaturesHref = `${productPath('rust-cheat', locale)}#features`;
+const isleCheatFeaturesHref = `${productPath('the-isle-cheat', locale)}#features`;
 
 const cards: ExploreCard[] = [
-  { href: productPath('rust-cheat', locale), icon: 'crosshair', cardKey: 'cheats', badge: 'product', product: true },
+  { href: productPath('the-isle-cheat', locale), icon: 'crosshair', cardKey: 'cheats', badge: 'product', product: true },
   { href: productPath('spoofer', locale), icon: 'systemUtility', cardKey: 'spoofer', badge: 'product', product: true },
   { href: productPath('ugc', locale), icon: 'accountRecovery', cardKey: 'ugc', badge: 'product', product: true },
-  { href: getLocalizedPath('/blog/cheap-rust-cheats/', locale), icon: 'featureUtilitySuite', cardKey: 'plans' },
-  { href: rustCheatFeaturesHref, icon: 'layers', cardKey: 'features' },
+  { href: getLocalizedPath('/products/', locale), icon: 'featureUtilitySuite', cardKey: 'plans' },
+  { href: isleCheatFeaturesHref, icon: 'layers', cardKey: 'features' },
   { href: getLocalizedPath(ROUTES.status, locale), icon: 'liveStatus', cardKey: 'status', badge: 'active' },
   { href: getLocalizedPath(ROUTES.faq, locale), icon: 'faqStatus', cardKey: 'faq' },
   { href: getLocalizedPath(ROUTES.support, locale), icon: 'headphones', cardKey: 'support' },

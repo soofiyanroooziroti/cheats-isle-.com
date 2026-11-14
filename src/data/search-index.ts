@@ -1,11 +1,9 @@
-import type { BlogBlock } from './blog/types';
-import { getBlogPostsForLocale } from './blog/loader';
 import { defaultLocale } from '../i18n/locales';
 import { siteFaqs } from './faq';
 import { getForumPostsForLocale } from './forum-i18n';
 import { getProductPages } from './products';
 import { getProductFromPrice } from './productPricing';
-import { STATUS_RECENT_UPDATES } from './status';
+import { STATUS_GAME_PATCHES, STATUS_BAN_RISK, getStatusCheatUpdates } from './status';
 import { getTranslations, localePath } from '../i18n';
 import type { Locale } from '../i18n/locales';
 import type { Translations } from '../i18n/types';
@@ -17,7 +15,6 @@ export type SearchEntryType =
   | 'Product'
   | 'Features'
   | 'Plans'
-  | 'Blog'
   | 'FAQ'
   | 'Forum'
   | 'Support'
@@ -33,21 +30,6 @@ export interface SearchIndexEntry {
 
 function stripHtml(html: string): string {
   return html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
-}
-
-function blogBlocksToText(blocks: BlogBlock[]): string {
-  const parts: string[] = [];
-  for (const block of blocks) {
-    if (block.type === 'ul') parts.push(...block.items);
-    else if (block.type === 'table') {
-      parts.push(...block.headers, ...block.rows.flat());
-    } else if (block.type === 'cta') {
-      parts.push(block.title, block.text);
-    } else {
-      parts.push(block.text);
-    }
-  }
-  return parts.join(' ');
 }
 
 function homepageSearchText(t: Translations): string {
@@ -74,10 +56,9 @@ function homepageSearchText(t: Translations): string {
 
 export function buildSearchIndex(locale: Locale = defaultLocale): SearchIndexEntry[] {
   const t = getTranslations(locale);
-  const blogPosts = getBlogPostsForLocale(locale);
   const productPages = getProductPages(locale);
   const entries: SearchIndexEntry[] = [];
-  const featuresUrl = `${productPath('rust-cheat', locale)}#features`;
+  const featuresUrl = `${productPath('the-isle-cheat', locale)}#features`;
 
   entries.push({
     title: t.site.title,
@@ -134,8 +115,8 @@ export function buildSearchIndex(locale: Locale = defaultLocale): SearchIndexEnt
         }
       }
       entries.push({
-        title: 'Rust cheat features',
-        description: 'Aimbot, ESP, weapon options, misc options, and config options on the cheat product page.',
+        title: 'The Isle Cheats features',
+        description: 'Visual and Misc menu lines on the Evrima cheat product page.',
         url: featuresUrl,
         type: 'Features',
         text: product.fullFeatures.join(' '),
@@ -143,8 +124,8 @@ export function buildSearchIndex(locale: Locale = defaultLocale): SearchIndexEnt
     }
   }
 
-  const plansUrl = localePath('/blog/rust-cheat-pricing/', locale);
-  const plansSeo = resolvePageSeo('/blog/rust-cheat-pricing/', locale);
+  const plansUrl = localePath(ROUTES.products, locale);
+  const plansSeo = resolvePageSeo(ROUTES.products, locale);
   entries.push({
     title: 'Plans — $35 monthly & $150 lifetime',
     description: 'Compare monthly and lifetime checkout: cheat and UGC $35, HWID spoofer $50, all $150 lifetime.',
@@ -171,7 +152,9 @@ export function buildSearchIndex(locale: Locale = defaultLocale): SearchIndexEnt
     text: [
       statusSeo.title,
       statusSeo.description,
-      ...STATUS_RECENT_UPDATES.flatMap((entry) => [entry.title, entry.summary, entry.when]),
+      ...STATUS_GAME_PATCHES.flatMap((entry) => [entry.build, entry.summary, entry.when]),
+      ...getStatusCheatUpdates().flatMap((entry) => [entry.summary, entry.when]),
+      STATUS_BAN_RISK,
     ].join(' '),
   });
 
@@ -208,26 +191,6 @@ export function buildSearchIndex(locale: Locale = defaultLocale): SearchIndexEnt
       ...t.support.channels.map((c) => `${c.title} ${c.desc}`),
     ].join(' '),
   });
-
-  if (blogPosts.length > 0) {
-    entries.push({
-      title: t.blog.title,
-      description: t.blog.subtitle,
-      url: localePath(ROUTES.blog, locale),
-      type: 'Blog',
-      text: [t.blog.title, t.blog.subtitle, t.blog.latestSubtitle].filter(Boolean).join(' '),
-    });
-  }
-
-  for (const post of blogPosts) {
-    entries.push({
-      title: post.title,
-      description: post.desc,
-      url: getLocalizedPath(`/blog/${post.slug}/`, locale),
-      type: 'Blog',
-      text: [post.title, post.desc, post.tag, blogBlocksToText(post.body)].filter(Boolean).join(' '),
-    });
-  }
 
   const forumSeo = resolvePageSeo(ROUTES.forum, locale);
   const localizedForumPosts = getForumPostsForLocale(locale);

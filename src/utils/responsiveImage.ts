@@ -22,7 +22,7 @@ export function webpSrc(src: string, width: number): string {
 /** Product WebPs are stored as a single full-size file (no multi-width variants). */
 export function hasResponsiveWebpVariants(src: string): boolean {
   if (!RASTER_EXT.test(src)) return false;
-  if (/\/images\/products\/[^/]+\.webp$/i.test(src)) return false;
+  if (/\/images\/(?:products|blog)\/[^/]+\.webp$/i.test(src)) return false;
   if (/\/images\/placeholder(?:-\d+)?\.webp$/i.test(src)) return false;
   if (src.includes('/images/placeholder.png')) return false;
   return true;

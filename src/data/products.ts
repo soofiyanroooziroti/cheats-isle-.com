@@ -25,16 +25,9 @@ export type {
 } from './product-types';
 
 export const productRelatedBlogSlugs: Record<string, string[]> = {
-  'rust-cheat': [
-    'cheap-rust-cheats',
-    'best-rust-cheats-reddit',
-    'best-rust-aimbot',
-    'rust-aimbot',
-    'rust-esp',
-    'rust-cheat-features',
-  ],
-  spoofer: ['spoofer-rust'],
-  ugc: ['rust-ban-types'],
+  'the-isle-cheat': [],
+  spoofer: [],
+  ugc: [],
 };
 
 const productBase = PRODUCT_CATALOG;
@@ -57,7 +50,7 @@ function acquisitionForUtility(productName: string): ProductAcquisition {
 
 function slugFromHref(href: string): string {
   const path = href.replace(/\/$/, '');
-  const segment = path.split('/').filter(Boolean).pop() ?? 'rust-cheat';
+  const segment = path.split('/').filter(Boolean).pop() ?? 'the-isle-cheat';
   return segment;
 }
 
@@ -92,7 +85,7 @@ function buildTierPages(t: Translations, locale: Locale): ProductPage[] {
       subtitle: cheat.desc,
       desc: cheat.desc,
       features: cheat.features,
-      more: cheat.more,
+      more: cheat.more ?? 0,
       variant: cheat.variant,
       buyUrl: checkoutForSlug(slug),
       images: content.images,
@@ -135,7 +128,7 @@ function buildUtilityPages(t: Translations, locale: Locale): ProductPage[] {
         subtitle: product.subtitle,
         desc: product.desc,
         features: product.features,
-        more: product.more,
+        more: product.more ?? 0,
         buyUrl: checkoutForSlug(slug),
         images: content.images,
         overview: content.overview,
@@ -185,7 +178,7 @@ export function getProductHub(locale: Locale = defaultLocale) {
     title: t.products.catalogHeading ?? t.products.title,
     subtitle: t.products.subtitle,
     description: t.products.subtitle,
-    buyUrl: checkoutPath('rustCheat'),
+    buyUrl: checkoutPath('isleCheat'),
   };
 }
 

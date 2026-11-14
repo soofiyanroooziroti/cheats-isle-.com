@@ -16,6 +16,7 @@ interface Slide {
   captionDesc: string;
   width?: number;
   height?: number;
+  objectFit?: 'contain' | 'cover';
 }
 
 interface Props {
@@ -50,14 +51,20 @@ const imageWidths = isHero ? HERO_IMAGE_WIDTHS : undefined;
       {images.map((img, i) => {
         const { width: imgWidth, height: imgHeight } =
           img.width && img.height ? { width: img.width, height: img.height } : intrinsicImageSize(img.src);
+        const fit = img.objectFit ?? 'cover';
+        const heroFigureStyle =
+          isHero && imgWidth && imgHeight
+            ? `aspect-ratio: ${imgWidth} / ${imgHeight}`
+            : undefined;
         return (
         <CarouselItem class="basis-full">
           <figure
             class:list={[
               isHero
-                ? 'hero-embla-slide-figure aspect-[16/10] overflow-hidden rounded-lg bg-muted/30'
+                ? 'hero-embla-slide-figure overflow-hidden rounded-lg bg-muted/30'
                 : 'overflow-hidden rounded-lg',
             ]}
+            style={heroFigureStyle}
           >
             <ResponsiveImage
               src={img.src}
@@ -69,7 +76,11 @@ const imageWidths = isHero ? HERO_IMAGE_WIDTHS : undefined;
               fetchPriority={isHero && i === 0 ? 'high' : undefined}
               sizes={imageSizes}
               desktopOnly={desktopOnly}
-              class={isHero ? 'hero-embla-slide__img h-full w-full object-cover' : undefined}
+              class:list={[
+                isHero && 'hero-embla-slide__img h-full w-full',
+                isHero && fit === 'contain' && 'hero-embla-slide__img--contain',
+                isHero && fit !== 'contain' && 'hero-embla-slide__img--cover',
+              ]}
             />
             {!isHero && (img.caption || img.captionDesc) && (
               <figcaption class="mt-2 px-1 text-sm text-muted-foreground">

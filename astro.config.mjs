@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap';
 import { sitemapSerialize } from './src/config/sitemap.ts';
 
 export default defineConfig({
-  site: 'https://cheatrust.org',
+  site: 'https://cheatsisle.com',
   trailingSlash: 'always',
   i18n: {
     defaultLocale: 'en',

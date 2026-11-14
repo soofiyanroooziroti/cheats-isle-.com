@@ -70,8 +70,8 @@ const readCtaLabel = `${t.blog.read}: ${post.title}`;
     <ResponsiveImage
       src={post.image}
       alt={post.imageAlt ?? post.title}
-      width={isFeatured ? 960 : 640}
-      height={isFeatured ? 540 : 360}
+      width={post.imageWidth ?? (isFeatured ? 1200 : 640)}
+      height={post.imageHeight ?? (isFeatured ? 675 : 360)}
       widths={isFeatured ? undefined : CARD_IMAGE_WIDTHS}
       sizes={isFeatured ? '(min-width: 1024px) 560px, 100vw' : CARD_IMAGE_SIZES}
       loading={eager ? 'eager' : 'lazy'}

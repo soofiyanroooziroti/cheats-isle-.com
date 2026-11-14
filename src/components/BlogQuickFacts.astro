@@ -17,7 +17,7 @@ const heroMetrics = (
 
 const antiCheat =
   side.quickFactsAntiCheat ??
-  (heroMetrics?.[0] ? `${heroMetrics[0].label ?? 'Anti-cheat'}: ${heroMetrics[0].strong ?? 'EAC'}` : 'EasyAnti-Cheat (EAC)');
+  (heroMetrics?.[0] ? `${heroMetrics[0].label ?? 'Anti-cheat'}: ${heroMetrics[0].strong ?? 'EAC'}` : 'Easy Anti-Cheat (EAC)');
 const platform =
   side.quickFactsPlatform ??
   (heroMetrics?.[1] ? `${heroMetrics[1].strong ?? 'Windows PC'}` : 'Windows PC');
@@ -26,7 +26,7 @@ const plans =
   (heroMetrics?.[2] ? `${heroMetrics[2].label ?? 'Plans'} ${heroMetrics[2].strong ?? '$35 / $150'}` : 'Plans $35 / $150');
 const support =
   side.quickFactsSupport ??
-  (heroMetrics?.[3] ? `${heroMetrics[3].strong ?? '24/7'} ${heroMetrics[3].label ?? 'support'}` : '24/7 Discord support');
+  (heroMetrics?.[3] ? `${heroMetrics[3].strong ?? 'Discord'} ${heroMetrics[3].label ?? 'support'}` : 'Discord support');
 
 const facts = [
   { title: antiCheat, body: '' },
@@ -36,7 +36,7 @@ const facts = [
 ];
 
 const statusHref = localizedPath(ROUTES.status, locale);
-const loaderHref = productPath('rust-cheat', locale);
+const loaderHref = productPath('the-isle-cheat', locale);
 ---
 
 <div class="blog-quick-facts" aria-labelledby="blog-quick-facts-title">
@@ -62,6 +62,6 @@ const loaderHref = productPath('rust-cheat', locale);
   </a>
 
   <Button as="a" href={loaderHref} variant="primary" size="sm" class="blog-quick-facts__cta w-full justify-center">
-    {side.quickFactsViewProduct ?? 'View Rust cheat'}
+    {side.quickFactsViewProduct ?? 'View The Isle cheat'}
   </Button>
 </div>

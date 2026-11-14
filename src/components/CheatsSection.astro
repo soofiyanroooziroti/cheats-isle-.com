@@ -7,6 +7,7 @@ import { cheatTierIcons } from '../data/sectionIcons';
 import SectionHeader from './SectionHeader.astro';
 import CatalogCard from './CatalogCard.astro';
 import { cheatPath } from '../utils/path';
+import { catalogBuyLabel, catalogFeatureTotal, catalogPillLabel } from '../utils/catalog-card';
 
 const s = t.cheats;
 ---
@@ -18,18 +19,18 @@ const s = t.cheats;
     <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {cheatPages.map((cheat) => (
         <CatalogCard
-          label={cheat.tier ?? cheat.name}
+          label={catalogPillLabel(cheat)}
           title={cheat.title}
           href={cheatPath(cheat.slug)}
           buyUrl={cheat.buyUrl}
           productSlug={cheat.slug}
           features={cheat.features}
-          more={cheat.more}
+          featureTotal={catalogFeatureTotal(cheat)}
           icon={cheatTierIcons[cheat.name] ?? 'crosshair'}
           badge={cheat.badge}
           variant={cheat.variant}
           featured
-          buyLabel="Buy now"
+          buyLabel={catalogBuyLabel(cheat.slug)}
           viewLabel="View details"
           maxFeatures={3}
         />

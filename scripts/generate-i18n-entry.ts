@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { en } from '../src/i18n/en.ts';
+import en from '../src/i18n/en.json' with { type: 'json' };
 import { PAGE_SEO } from '../src/config/pageSeo.ts';
 import { siteFaqs } from '../src/data/faq.ts';
 import { blogPosts } from '../src/data/blog/posts.ts';
@@ -23,7 +23,7 @@ const extraStrings = {
     badgeProduct: 'PRODUCT',
     badgeActive: 'Active',
     cards: {
-      cheats: { title: 'Rust Cheats', desc: 'Aimbot, ESP, weapon options, and misc options for Windows PC.' },
+      cheats: { title: 'Isle Cheats', desc: 'Aimbot, ESP, weapon options, and misc options for Windows PC.' },
       spoofer: { title: 'HWID Spoofer', desc: 'Hardware profile rotation after a machine flag.' },
       ugc: { title: 'UGC Account Recovery', desc: 'Appeal workspace for locked gaming accounts.' },
       plans: { title: 'Plans', desc: 'Compare 1 Month $35 and Lifetime $150.' },
@@ -57,7 +57,7 @@ const extraStrings = {
     title: 'Page not found',
     description:
       'That URL does not exist or may have moved. Head back to the homepage or browse the products.',
-    metaDescription: 'The page you requested could not be found on cheatrust.org.',
+    metaDescription: 'The page you requested could not be found on cheatsisle.com.',
     metaTitleSuffix: 'Page not found',
     backHome: 'Back to home',
     viewProducts: 'View products',
@@ -65,8 +65,8 @@ const extraStrings = {
   },
   status: {
     eyebrow: 'Patch notes',
-    title: 'Rust module status',
-    subtitle: 'Check after every EasyAnti-Cheat or client update before you launch.',
+    title: 'Evrima module status',
+    subtitle: 'Check after every Easy Anti-Cheat or client update before you launch.',
     breadcrumb: 'Status',
     aceReminderLabel: 'EAC reminder',
     recentTitle: 'Recent updates',
@@ -76,7 +76,7 @@ const extraStrings = {
   },
   forum: {
     eyebrow: 'Community',
-    title: 'Rust community forum',
+    title: 'The Isle community forum',
     subtitle: 'Setup, aim, ESP, and plan questions with marked developer replies.',
     breadcrumb: 'Forum',
     postsAria: 'Community posts',
@@ -103,7 +103,7 @@ const extraStrings = {
     emptyFilter: 'No discussions match. Try another search or topic.',
     previous: 'Previous',
     next: 'Next',
-    sidebarAboutTitle: 'Rust community',
+    sidebarAboutTitle: 'The Isle community',
     sidebarAboutCopy:
       'Questions about the cheat, the HWID spoofer, and UGC recovery. Developer replies stay on the thread.',
     sidebarTopics: 'topics',
@@ -152,9 +152,9 @@ const extraStrings = {
     title: 'FAQ for cheats, products & guides',
     subtitle:
       'Plans, aim and ESP options, the HWID spoofer, UGC recovery, and what to check after an EAC update.',
-    schemaName: 'FAQ — Rust Cheats & Products',
+    schemaName: 'FAQ — Isle Cheats & Products',
     schemaDescription:
-      'Answers about Rust Cheats, the HWID spoofer, UGC recovery, EAC risk, and checkout on cheatrust.org.',
+      'Answers about Isle Cheats, the HWID spoofer, UGC recovery, EAC risk, and checkout on cheatsisle.com.',
   },
   siteFaqSection: {
     allTopicsEyebrow: 'All topics',
@@ -167,7 +167,7 @@ const extraStrings = {
   footer: {
     resourceLinks: [
       { label: 'Blog archive', ariaLabel: 'Blog' },
-      { label: 'Rust Cheats', ariaLabel: 'Rust Cheats' },
+      { label: 'Isle Cheats', ariaLabel: 'Isle Cheats' },
       { label: 'Products & utilities', ariaLabel: 'Products' },
     ],
   },
@@ -189,7 +189,7 @@ const extraStrings = {
     relatedGuides: 'Related guides',
     ourProducts: 'Our products',
     readingTools: 'Reading tools',
-    productCheats: 'Rust Cheats',
+    productCheats: 'Isle Cheats',
     allProducts: 'All products',
     hwidSpoofer: 'HWID Spoofer',
     ugcRecovery: 'UGC Account recovery',

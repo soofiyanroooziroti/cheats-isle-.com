@@ -2,7 +2,7 @@
 import { getLocaleFromAstro, getTranslations } from '../i18n';
 const locale = getLocaleFromAstro(Astro);
 const t = getTranslations(locale);
-import { formatActiveStatusLine } from "../data/status";
+import StatusUpdatedPill from "./StatusUpdatedPill.astro";
 import { setupStepIcons } from "../data/sectionIcons";
 import Icon from "./icons/Icon.astro";
 import { normalizeInternalPath } from "../utils/path";
@@ -32,7 +32,7 @@ const lastRowIndex = why.rows.length - 1;
     <div
       class="mt-14 hidden justify-center lg:flex"
       role="table"
-      aria-label="Rust Cheats compared with a typical provider"
+      aria-label="Isle Cheats compared with a typical provider"
     >
       <div
         class="why-compare-layout grid w-full max-w-4xl grid-cols-[minmax(0,1fr)_9.25rem_9.25rem] items-stretch gap-x-10 xl:max-w-5xl xl:gap-x-14"
@@ -244,10 +244,7 @@ const lastRowIndex = why.rows.length - 1;
         class="deployment-status-strip__bar flex flex-col gap-3 rounded-xl border border-primary/30 bg-card/90 px-4 py-3 shadow-sm ring-1 ring-primary/10 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between sm:gap-4"
       >
         <div class="flex flex-wrap items-center gap-3 sm:gap-4">
-          <p class="flex items-center gap-2 text-sm font-medium text-foreground">
-            <span class="deployment-status-dot" aria-hidden="true"></span>
-            {formatActiveStatusLine()}
-          </p>
+          <StatusUpdatedPill class="deployment-status-strip__pill" />
           <Button
             as="a"
             href={normalizeInternalPath(setup.statusStrip.aceStatusHref)}

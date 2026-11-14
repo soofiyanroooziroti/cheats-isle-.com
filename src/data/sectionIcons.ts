@@ -1,12 +1,8 @@
 import type { IconName } from '../components/icons/types';
 
 export const featureIcons: Record<string, IconName> = {
-  'Visual ESP Features': 'featureEsp',
-  'Visual ESP Features 2': 'lootEsp',
-  'Weapon Options': 'toolkitWeapons',
-  'Aimbot Options': 'featureAimbot',
-  'Misc Options': 'toolkitMovement',
-  'Config Options': 'compareCloudBackup',
+  Visual: 'featureEsp',
+  Misc: 'toolkitMovement',
 };
 
 export const whyUsIcons: IconName[] = ['whyShield', 'whyUsers', 'whyMonitor', 'whyHeadphones'];
@@ -40,12 +36,11 @@ export const blogTagIcons: Record<string, IconName> = {
 };
 
 export const heroStatusPills: { icon: IconName; label: string }[] = [
-  { icon: 'softAim', label: 'Aimbot' },
   { icon: 'espActive', label: 'Player ESP' },
-  { icon: 'lootEsp', label: 'Loot filter' },
-  { icon: 'skeletonEsp', label: 'Weapon options' },
-  { icon: 'seasonBuild', label: 'Camera FOV' },
-  { icon: 'instantDelivery', label: 'Config save' },
+  { icon: 'lootEsp', label: 'Animal ESP' },
+  { icon: 'skeletonEsp', label: 'Species read' },
+  { icon: 'seasonBuild', label: 'Growth ESP' },
+  { icon: 'instantDelivery', label: 'Fruit markers' },
   { icon: 'support247', label: 'HWID spoofer' },
   { icon: 'shieldCheck', label: 'EAC status' },
   { icon: 'boneSelect', label: 'Bone select' },

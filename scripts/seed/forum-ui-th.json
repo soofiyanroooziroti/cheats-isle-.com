@@ -1,6 +1,6 @@
 {
   "eyebrow": "ชุมชน",
-  "title": "ฟอรัมชุมชน Rust",
+  "title": "ฟอรัมชุมชน The Isle",
   "subtitle": "การตั้งค่า aim ESP และคำถามเรื่องแพ็ก พร้อมคำตอบจากผู้พัฒนาที่ปักหมุดไว้",
   "breadcrumb": "ฟอรัม",
   "postsAria": "โพสต์ชุมชน",
@@ -27,7 +27,7 @@
   "emptyFilter": "ไม่มีการสนทนาที่ตรงกัน ลองค้นหาหรือหัวข้ออื่น",
   "previous": "ก่อนหน้า",
   "next": "ถัดไป",
-  "sidebarAboutTitle": "ชุมชน Rust",
+  "sidebarAboutTitle": "ชุมชน The Isle",
   "sidebarAboutCopy": "คำถามเกี่ยวกับ cheat HWID spoofer และการกู้ UGC คำตอบจากผู้พัฒนาอยู่ในเธรด",
   "sidebarTopics": "หัวข้อ",
   "sidebarExploreGuides": "ดูคู่มือทั้งหมด",

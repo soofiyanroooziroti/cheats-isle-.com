@@ -11,7 +11,7 @@ import {
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dist = resolveDistDir();
-const SITE = 'https://cheatrust.org';
+const SITE = 'https://cheatsisle.com';
 const errors = [];
 const reports = [];
 
@@ -121,8 +121,8 @@ function checkRobots() {
   }
   const text = fs.readFileSync(robotsPath, 'utf8');
   if (!/Disallow:\s*\/go\//i.test(text)) fail('robots.txt missing Disallow: /go/');
-  if (!/Sitemap:\s*https:\/\/cheatrust\.org\/sitemap/i.test(text)) {
-    fail('robots.txt missing sitemap URL for cheatrust.org');
+  if (!/Sitemap:\s*https:\/\/cheatsisle\.com\/sitemap/i.test(text)) {
+    fail('robots.txt missing sitemap URL for cheatsisle.com');
   }
 }
 
@@ -156,8 +156,8 @@ function checkSitemaps() {
 }
 
 const CHECKOUT_BY_PATH = {
-  '/go/rust': CHECKOUT_URLS.rustCheat,
-  '/go/rust/': CHECKOUT_URLS.rustCheat,
+  '/go/the-isle-cheat': CHECKOUT_URLS.isleCheat,
+  '/go/the-isle-cheat/': CHECKOUT_URLS.isleCheat,
   '/go/hwid-spoofer': CHECKOUT_URLS.hwidSpoofer,
   '/go/hwid-spoofer/': CHECKOUT_URLS.hwidSpoofer,
   '/go/ugc': CHECKOUT_URLS.ugc,
@@ -165,7 +165,7 @@ const CHECKOUT_BY_PATH = {
 };
 
 const SPEC_KEY_TO_PATH = {
-  rustCheat: '/go/rust',
+  isleCheat: '/go/the-isle-cheat',
   hwidSpoofer: '/go/hwid-spoofer',
   ugc: '/go/ugc',
 };
@@ -386,7 +386,7 @@ function isEnglishPath(pathname) {
 
 function checkKeywords() {
   const homeKwRaw = PAGE_KEYWORDS['/'];
-  const homeKw = (typeof homeKwRaw === 'string' ? homeKwRaw : homeKwRaw?.[0] ?? 'rust cheats').toLowerCase();
+  const homeKw = (typeof homeKwRaw === 'string' ? homeKwRaw : homeKwRaw?.[0] ?? 'the isle cheats').toLowerCase();
   const siteTitleRe = new RegExp(`\\s*\\|\\s*${homeKw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*$`, 'i');
 
   for (const file of htmlFiles) {
